@@ -5,8 +5,8 @@ description: > Numpy
 
 author: author1
 canonical_url:
-categories: [programming]
-tags: [programming]
+categories: [installations]
+tags: [installations]
 ---
 ### Getting Started with Numpy Part 2
 
