@@ -6,7 +6,7 @@ description: >
 author: author1
 canonical_url:
 categories: [installations]
-#tags: [Installations]
+tags: [Installations]
 ---
 
 
