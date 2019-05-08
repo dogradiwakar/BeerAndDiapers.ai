@@ -4,7 +4,8 @@ layout: list
 
 # The title of the tag's page.
 title: Programming
-
+order: 1
+menu: true
 # The name of the tag, used in a post's front matter (e.g. tags: [<slug>]).
 slug: Programming
 
