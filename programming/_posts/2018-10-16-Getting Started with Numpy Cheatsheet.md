@@ -5,8 +5,8 @@ description: >
 
 author: author1
 canonical_url:
-categories: [programming]
-tags: [programming]
+categories: [Programming]
+tags: [Programming]
 ---
 ### Getting Started with Numpy Cheatsheet
 
