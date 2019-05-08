@@ -51,13 +51,13 @@ author:
 # Add links to the sidebar.
 menu:
   - title:             Deep Learning
-    url:               /DeepLearning/
+    url:               /deeplearning/
   - title:             Installations
     url:               /installations/
   - title:             Programming
     url:               /programming/
   - title:             Machine Learning
-    url:               /MachineLearning/
+    url:               /machinelearning/
 
 # Add links to the footer.
 # Typically you'll want to link to your cookie- or privacy policy (if appliable), etc..
