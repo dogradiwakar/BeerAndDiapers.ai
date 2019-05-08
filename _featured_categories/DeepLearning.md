@@ -10,5 +10,5 @@ slug: DeepLearning
 
 # (Optional) Write a short (~150 characters) description of this featured tag.
 description: >
-  Example
+  DeepLearning
 ---
