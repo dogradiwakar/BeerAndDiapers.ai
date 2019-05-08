@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started with Numpy Cheatsheet
+title: Getting Started with Numpy Cheat sheet
 description: >
 
 author: author1
