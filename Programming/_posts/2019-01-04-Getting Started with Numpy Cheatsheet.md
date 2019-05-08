@@ -8,7 +8,7 @@ canonical_url:
 categories: [Programming,Numpy]
 #tags: [Programming1 , Numpy1]
 ---
-### Getting Started with Numpy Cheatsheet
+### Getting Started with Numpy Cheat sheet
 
 
 ![](/Tathastu/images/2018/numpy/datacamp.PNG)
