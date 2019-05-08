@@ -4,7 +4,7 @@
 author1:
   # Replace <...> with your own (remove the < >)
   name:              Diwakar Dogra
-  email:             <dogra.diwakar@gmail.com>
+  email:             dogra.diwakar@gmail.com
 
   # Used at the bottom of each page and at the top of the `about` layout
   # Markdown enabled, can use multiple paragraphs (enabled by `|`)
@@ -65,7 +65,7 @@ author1:
 # Another author
 author2:
   name:              Diwakar Dogra
-  email:             <dogra.diwakar@gmail.com>
+  email:             dogra.diwakar@gmail.com
   about:             |
 
   picture:           /images/dd.jpg
