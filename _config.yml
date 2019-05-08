@@ -68,7 +68,7 @@ menu:
 #     url:               /cookies-policy/
 
 # This text will appear in a `<small>` tag in the footer of every page.
-copyright:             © 2019. All rights reserved. Apache-2.0.
+copyright:             © 2019. All rights reserved. Apache 2.0 GNU License.
 
 # Format of the permalinks
 permalink:             /:categories/:year-:month-:day-:title/
