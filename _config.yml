@@ -50,11 +50,11 @@ author:
 
 # Add links to the sidebar.
 menu:
-  - title:             Example
+  - title:             example
     url:               /example/
-  - title:             Installations
+  - title:             installations
     url:               https://hydejack.com/docs/
-  - title:             Programming
+  - title:             programming
     url:               /programming/
 
 # Add links to the footer.
