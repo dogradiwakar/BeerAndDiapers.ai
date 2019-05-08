@@ -53,7 +53,7 @@ menu:
   - title:             example
     url:               /example/
   - title:             installations
-    url:               https://hydejack.com/docs/
+    url:               /installations/
   - title:             programming
     url:               /programming/
 
