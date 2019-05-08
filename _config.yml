@@ -50,11 +50,11 @@ author:
 
 # Add links to the sidebar.
 menu:
-  - title:             example
+  - title:             Example
     url:               /example/
-  - title:             installations
+  - title:             Installations
     url:               /installations/
-  - title:             programming
+  - title:             Programming
     url:               /programming/
 
 # Add links to the footer.
