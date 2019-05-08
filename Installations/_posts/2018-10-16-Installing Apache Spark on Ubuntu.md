@@ -5,8 +5,8 @@ description: >
 
 author: author1
 canonical_url:
-categories: [Installations]
-tags: [Installations]
+categories: [installations]
+tags: [installations]
 ---
 ### Installing Apache Spark on Ubuntu
 
