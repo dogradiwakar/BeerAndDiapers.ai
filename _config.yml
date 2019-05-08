@@ -50,8 +50,8 @@ author:
 
 # Add links to the sidebar.
 menu:
-  - title:             Example
-    url:               /example/
+  - title:             Deep Learning
+    url:               /DeepLearning/
   - title:             Installations
     url:               /installations/
   - title:             Programming
