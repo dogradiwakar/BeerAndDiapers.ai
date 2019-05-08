@@ -24,14 +24,14 @@ title:                 Tathastu
 # A short description (~150 chars) of the page used for the meta description tag.
 # Can use markdown, but no more than one paragraph (enforced by `>`)
 description:           >
-  "Best Jekyll Theme by a Mile".
-  **Hydejack** is your presence on the web, featuring a blog, portfolio, and resume.
-  Open `_config.yml` to edit this text.
+#  "Best Jekyll Theme by a Mile".
+#  **Hydejack** is your presence on the web, featuring a blog, portfolio, and resume.
+#  Open `_config.yml` to edit this text.
 
 # A shorter description for the sidebar.
 tagline:               >
-  "Best Jekyll Theme by a Mile".
-  Open `_config.yml` to edit this text.
+#  "Best Jekyll Theme by a Mile".
+#  Open `_config.yml` to edit this text.
 
 # A list of keywords for your blog
 keywords:              []
@@ -72,7 +72,7 @@ copyright:             © 2019. All rights reserved. Open `_config.yml` to edit 
 permalink:             /:categories/:year-:month-:day-:title/
 
 # Pagination configuration (used by the `blog` layout)
-paginate:              5
+paginate:              10
 paginate_path:         /page-:num/
 
 
