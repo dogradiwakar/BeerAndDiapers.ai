@@ -51,7 +51,7 @@ author:
 # Add links to the sidebar.
 menu:
   - title:             Example
-    url:               /example/
+    url:               /dd/
   - title:             Documentation
     url:               https://hydejack.com/docs/
   - title:             About
