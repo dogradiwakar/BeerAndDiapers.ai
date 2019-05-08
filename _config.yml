@@ -56,7 +56,7 @@ menu:
     url:               /installations/
   - title:             Programming
     url:               /programming/
-  - title:             MAchine Learning
+  - title:             Machine Learning
     url:               /MachineLearning/
 
 # Add links to the footer.
