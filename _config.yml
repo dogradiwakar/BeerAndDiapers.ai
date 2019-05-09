@@ -59,6 +59,8 @@ menu:
     url:               /programming/
   - title:             Machine Learning
     url:               /machinelearning/
+  - title:             Life
+    url:               /life/
 
 # Add links to the footer.
 # Typically you'll want to link to your cookie- or privacy policy (if appliable), etc..
