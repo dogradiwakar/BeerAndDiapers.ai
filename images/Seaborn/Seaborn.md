@@ -1,14 +1,3 @@
----
-layout: post
-title: Getting Started with Seaborn
-description: >
-
-author: author1
-canonical_url:
-categories: [Programming,Numpy]
-#tags: [Programming1 , Numpy1]
----
-### Getting Started with Seaborn
 
 # Distribution Plots
 
@@ -22,7 +11,7 @@ categories: [Programming,Numpy]
 ```python
 import seaborn as sns
 # To show the graphs within the notebook
-%matplotlib inline
+%matplotlib inline 
 ```
 
 
@@ -134,12 +123,13 @@ sns.distplot(tips['total_bill'])
 
 
 
-![png](/Tathastu/images/seaborn/output_4_1.png)
+
+![png](output_4_1.png)
 
 
 
 ```python
-# To remove the KDE set kde parameter to false and to set bins set value of bins accordingly
+# To remove the KDE set kde parameter to false and to set bins set value of bins accordingly 
 sns.distplot(tips['total_bill'],kde=False,bins=20)
 ```
 
@@ -276,11 +266,11 @@ kernel_list = []
 
 # Plot each basis function
 for data_point in dataset:
-
+    
     # Create a kernel for each point and append to list
     kernel = stats.norm(data_point,bandwidth).pdf(x_axis)
     kernel_list.append(kernel)
-
+    
     #Scale for plotting
     kernel = kernel / kernel.max()
     kernel = kernel * .4
@@ -361,7 +351,7 @@ sns.rugplot(tips['total_bill'])
 
 # barplot and countplot
 
-These plots allow to get aggregate data off a categorical feature in your data. **barplot** is a general plot that allows you to aggregate the categorical data based off some function, by default the mean. **Count plot** does the aggregation at counts
+These plots allow to get aggregate data off a categorical feature in your data. **barplot** is a general plot that allows you to aggregate the categorical data based off some function, by default the mean. **Count plot** does the aggregation at counts 
 
 
 ```python
@@ -381,7 +371,7 @@ sns.barplot(x='sex',y='total_bill',data=tips)
 
 
 ```python
-#using estimator we can override default aggregation type
+#using estimator we can override default aggregation type 
 import numpy as np
 sns.barplot(x='sex',y='total_bill',data=tips,estimator=np.sum)
 ```
@@ -415,7 +405,7 @@ sns.countplot(x='sex',data=tips)
 
 # boxplot and violinplot
 
-boxplots and violinplots are used to shown the distribution of categorical data.
+boxplots and violinplots are used to shown the distribution of categorical data. 
 
 A **box plot** shows the distribution of quantitative data in a way that facilitates comparisons between variables or across levels of a categorical variable. The box shows the quartiles of the dataset while the whiskers extend to show the rest of the distribution, except for points that are determined to be “outliers” using a method that is a function of the inter-quartile range.
 
@@ -457,7 +447,7 @@ sns.boxplot(data=tips, palette='rainbow',orient='h')
 
 
 ```python
-# to add another categor add hue
+# to add another categor add hue 
 sns.boxplot(x='day',y='total_bill',data=tips, palette='rainbow',hue='sex')
 ```
 
@@ -506,7 +496,7 @@ sns.violinplot(x='day',y='total_bill',data=tips, palette='rainbow',hue='sex')
 
 
 ```python
-#use split to merge into 1
+#use split to merge into 1 
 sns.violinplot(x="day", y="total_bill", data=tips,hue='sex',split=True,platette='set1')
 ```
 
@@ -769,7 +759,7 @@ sns.heatmap(tp)
 
 
 ```python
-#use annot to show labels
+#use annot to show labels 
 sns.heatmap(tips.corr(),cmap='coolwarm',annot=True)
 ```
 
@@ -1045,7 +1035,7 @@ sns.heatmap(pvflights)
 
 
 ```python
-# use line color and line width to improve look and feel
+# use line color and line width to improve look and feel 
 sns.heatmap(pvflights,cmap='magma',linecolor='white',linewidths=1)
 ```
 
@@ -1150,7 +1140,7 @@ sns.lmplot(x='total_bill',y='tip',data=tips,hue='sex',palette='coolwarm')
 
 
 ```python
-# specify markers to distinguish ,
+# specify markers to distinguish , 
 sns.lmplot(x='total_bill',y='tip',data=tips,hue='sex',palette='coolwarm',markers=['o','v'],scatter_kws={'s':100})
 ```
 
@@ -1184,7 +1174,7 @@ sns.lmplot(x='total_bill',y='tip',data=tips,col='sex')
 
 
 ```python
-#provide row and column to lmplot
+#provide row and column to lmplot 
 sns.lmplot(x="total_bill", y="tip", row="sex", col="time",data=tips)
 ```
 
@@ -1201,7 +1191,7 @@ sns.lmplot(x="total_bill", y="tip", row="sex", col="time",data=tips)
 
 
 ```python
-# plot for different days
+# plot for different days 
 sns.lmplot(x='total_bill',y='tip',data=tips,col='day',hue='sex',palette='coolwarm')
 ```
 
@@ -1218,7 +1208,7 @@ sns.lmplot(x='total_bill',y='tip',data=tips,col='day',hue='sex',palette='coolwar
 
 
 ```python
-#adding aspect and size
+#adding aspect and size 
 sns.lmplot(x='total_bill',y='tip',data=tips,col='day',hue='sex',palette='coolwarm',
           aspect=0.6,size=8)
 ```
@@ -1378,7 +1368,7 @@ g.map_lower(sns.kdeplot)
 
 
 # pairplot
-pairplot is a simpler version of PairGrid
+pairplot is a simpler version of PairGrid 
 
 
 ```python
@@ -1481,3 +1471,4 @@ sns.despine(left=True)
 
 
 ![png](output_76_0.png)
+
