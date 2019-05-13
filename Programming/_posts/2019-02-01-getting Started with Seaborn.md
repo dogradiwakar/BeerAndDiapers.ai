@@ -5,7 +5,7 @@ description: >
 
 author: author1
 canonical_url:
-categories: [Programming,Numpy]
+categories: [Programming,Seaborn]
 #tags: [Programming1 , Numpy1]
 ---
 ### Getting Started with Seaborn
