@@ -1,3 +1,14 @@
+---
+layout: post
+title: Getting Started with Seaborn
+description: >
+
+author: author1
+canonical_url:
+categories: [Programming,Numpy]
+#tags: [Programming1 , Numpy1]
+---
+### Getting Started with Seaborn
 
 # Distribution Plots
 
