@@ -134,8 +134,8 @@ sns.distplot(tips['total_bill'])
 
 
 
-![png](/Tathastu/images/seaborn/output_4_1.png)
-
+![png](/Tathastu/images/Seaborn/output_4_1.png)
+![](/Tathastu/images/Seaborn/output_4_1.png)
 
 
 ```python
