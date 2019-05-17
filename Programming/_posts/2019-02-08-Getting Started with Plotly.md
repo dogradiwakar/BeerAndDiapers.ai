@@ -279,7 +279,7 @@ if (notebookContainer) {{
 // Listen for the clearing of the current output cell
 var outputEl = gd.closest('.output');
 if (outputEl) {{
-    x.observe(outputEl, {childList: true});
+    x.observe(outputEl, {childList: true}});
 }}
 
                         })
@@ -332,7 +332,7 @@ if (notebookContainer) {{
 // Listen for the clearing of the current output cell
 var outputEl = gd.closest('.output');
 if (outputEl) {{
-    x.observe(outputEl, {childList: true});
+    x.observe(outputEl, {childList: true}});
 }}
 
                         })
@@ -384,7 +384,7 @@ if (notebookContainer) {{
 // Listen for the clearing of the current output cell
 var outputEl = gd.closest('.output');
 if (outputEl) {{
-    x.observe(outputEl, {childList: true});
+    x.observe(outputEl, {childList: true}});
 }}
 
                         })
@@ -437,7 +437,7 @@ if (notebookContainer) {{
 // Listen for the clearing of the current output cell
 var outputEl = gd.closest('.output');
 if (outputEl) {{
-    x.observe(outputEl, {childList: true});
+    x.observe(outputEl, {childList: true}});
 }}
 
                         })
@@ -491,7 +491,7 @@ if (notebookContainer) {{
 // Listen for the clearing of the current output cell
 var outputEl = gd.closest('.output');
 if (outputEl) {{
-    x.observe(outputEl, {childList: true});
+    x.observe(outputEl, {childList: true}});
 }}
 
                         })
@@ -544,7 +544,7 @@ if (notebookContainer) {{
 // Listen for the clearing of the current output cell
 var outputEl = gd.closest('.output');
 if (outputEl) {{
-    x.observe(outputEl, {childList: true});
+    x.observe(outputEl, {childList: true}});
 }}
 
                         })
@@ -597,7 +597,7 @@ if (notebookContainer) {{
 // Listen for the clearing of the current output cell
 var outputEl = gd.closest('.output');
 if (outputEl) {{
-    x.observe(outputEl, {childList: true});
+    x.observe(outputEl, {childList: true}});
 }}
 
                         })
@@ -649,7 +649,7 @@ if (notebookContainer) {{
 // Listen for the clearing of the current output cell
 var outputEl = gd.closest('.output');
 if (outputEl) {{
-    x.observe(outputEl, {childList: true});
+    x.observe(outputEl, {childList: true}});
 }}
 
                         })
