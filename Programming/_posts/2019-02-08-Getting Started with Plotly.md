@@ -273,7 +273,7 @@ var x = new MutationObserver(function (mutations, observer) {{
 // Listen for the removal of the full notebook cells
 var notebookContainer = gd.closest('#notebook-container');
 if (notebookContainer) {{
-    x.observe(notebookContainer, {childList: true});
+    x.observe(notebookContainer, {childList: true}});
 }}
 
 // Listen for the clearing of the current output cell
@@ -326,7 +326,7 @@ var x = new MutationObserver(function (mutations, observer) {{
 // Listen for the removal of the full notebook cells
 var notebookContainer = gd.closest('#notebook-container');
 if (notebookContainer) {{
-    x.observe(notebookContainer, {childList: true});
+    x.observe(notebookContainer, {childList: true}});
 }}
 
 // Listen for the clearing of the current output cell
@@ -378,7 +378,7 @@ var x = new MutationObserver(function (mutations, observer) {{
 // Listen for the removal of the full notebook cells
 var notebookContainer = gd.closest('#notebook-container');
 if (notebookContainer) {{
-    x.observe(notebookContainer, {childList: true});
+    x.observe(notebookContainer, {childList: true}});
 }}
 
 // Listen for the clearing of the current output cell
@@ -431,7 +431,7 @@ var x = new MutationObserver(function (mutations, observer) {{
 // Listen for the removal of the full notebook cells
 var notebookContainer = gd.closest('#notebook-container');
 if (notebookContainer) {{
-    x.observe(notebookContainer, {childList: true});
+    x.observe(notebookContainer, {childList: true}});
 }}
 
 // Listen for the clearing of the current output cell
@@ -485,7 +485,7 @@ var x = new MutationObserver(function (mutations, observer) {{
 // Listen for the removal of the full notebook cells
 var notebookContainer = gd.closest('#notebook-container');
 if (notebookContainer) {{
-    x.observe(notebookContainer, {childList: true});
+    x.observe(notebookContainer, {childList: true}});
 }}
 
 // Listen for the clearing of the current output cell
@@ -591,7 +591,7 @@ var x = new MutationObserver(function (mutations, observer) {{
 // Listen for the removal of the full notebook cells
 var notebookContainer = gd.closest('#notebook-container');
 if (notebookContainer) {{
-    x.observe(notebookContainer, {childList: true});
+    x.observe(notebookContainer, {childList: true}});
 }}
 
 // Listen for the clearing of the current output cell
@@ -643,7 +643,7 @@ var x = new MutationObserver(function (mutations, observer) {{
 // Listen for the removal of the full notebook cells
 var notebookContainer = gd.closest('#notebook-container');
 if (notebookContainer) {{
-    x.observe(notebookContainer, {childList: true});
+    x.observe(notebookContainer, {childList: true}});
 }}
 
 // Listen for the clearing of the current output cell
