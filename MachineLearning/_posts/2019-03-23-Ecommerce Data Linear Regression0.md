@@ -8,7 +8,7 @@ noindex: true
 categories: [MachineLearning]
 ---
 
-###Linear Regression Model on Ecommerce data
+### Linear Regression Model on Ecommerce data
 ```python
 #import necessary libraries
 import pandas as pd
