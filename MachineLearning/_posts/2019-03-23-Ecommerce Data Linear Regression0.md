@@ -281,7 +281,7 @@ sns.jointplot(x='Time on Website',y='Yearly Amount Spent', data=df)
 
 
 
-![png](/Tathastu/EcommerceDataLinearRegression/output_7_1.png)
+![png](/Tathastu/images/EcommerceDataLinearRegression/output_7_1.png)
 
 
 
