@@ -2,8 +2,8 @@
 layout: post
 title: MachineLearning II
 description: >
-  A page showing how regular markdown content is styled in Hydejack.
-image: /assets/img/blog/example-content-ii.jpg
+
+image: 
 noindex: true
 categories: [MachineLearning]
 ---
