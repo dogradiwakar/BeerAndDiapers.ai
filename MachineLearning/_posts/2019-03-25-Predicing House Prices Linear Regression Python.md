@@ -7,9 +7,7 @@ image:
 noindex: true
 categories: [MachineLearning]
 ---
-
-___
-# Linear Regression with Python
+### Linear Regression with Python
 
 * 'Avg. Area Income': Avg. Income of residents of the city house is located in.
 * 'Avg. Area House Age': Avg Age of Houses in same city
@@ -21,7 +19,6 @@ ___
 
 ### Check out the data & Import Libraries
 
-
 ```python
 import pandas as pd
 import numpy as np
@@ -29,21 +26,15 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 %matplotlib inline
 ```
-
 ### Check out the Data
-
 
 ```python
 USAhousing = pd.read_csv('USA_Housing.csv')
 ```
 
-
 ```python
 USAhousing.head()
 ```
-
-
-
 
 <div>
 <style scoped>
@@ -127,9 +118,6 @@ USAhousing.head()
 </table>
 </div>
 
-
-
-
 ```python
 USAhousing.info()
 ```
@@ -148,13 +136,9 @@ USAhousing.info()
     memory usage: 273.5+ KB
 
 
-
 ```python
 USAhousing.describe()
 ```
-
-
-
 
 <div>
 <style scoped>
@@ -259,142 +243,87 @@ USAhousing.describe()
 </table>
 </div>
 
-
-
-
 ```python
 USAhousing.columns
 ```
-
-
-
 
     Index(['Avg. Area Income', 'Avg. Area House Age', 'Avg. Area Number of Rooms',
            'Avg. Area Number of Bedrooms', 'Area Population', 'Price', 'Address'],
           dtype='object')
 
 
-
 ### Exploratory Data Analysis
-
-
 
 ```python
 sns.pairplot(USAhousing)
 ```
 
-
-
-
     <seaborn.axisgrid.PairGrid at 0x211a5415400>
 
-
-
-
 ![png](/Tathastu/images/LinearRegressionwithPythonBlog/output_10_1.png)
-
-
 
 ```python
 sns.distplot(USAhousing['Price'])
 ```
 
-
-
-
     <matplotlib.axes._subplots.AxesSubplot at 0x211a76deba8>
 
-
-
-
 ![png](/Tathastu/images/LinearRegressionwithPythonBlog/output_11_1.png)
-
-
 
 ```python
 sns.heatmap(USAhousing.corr())
 ```
 
-
-
-
     <matplotlib.axes._subplots.AxesSubplot at 0x21197c204a8>
 
-
-
-
 ![png](/Tathastu/images/LinearRegressionwithPythonBlog/output_12_1.png)
-
 
 ## Training a Linear Regression Model
 
 ### X and y arrays
-
 
 ```python
 X = USAhousing[['Avg. Area Income', 'Avg. Area House Age', 'Avg. Area Number of Rooms',
                'Avg. Area Number of Bedrooms', 'Area Population']]
 y = USAhousing['Price']
 ```
-
 ### Train Test Split
-
-
 
 ```python
 from sklearn.model_selection import train_test_split
 ```
-
-
 ```python
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.4, random_state=101)
 ```
 
 ## Creating and Training the Model
 
-
 ```python
 from sklearn.linear_model import LinearRegression
 ```
-
 
 ```python
 lm = LinearRegression()
 ```
 
-
 ```python
 lm.fit(X_train,y_train)
 ```
-
-
-
-
     LinearRegression(copy_X=True, fit_intercept=True, n_jobs=None, normalize=False)
 
 
-
 ### Model Evaluation
-
-
 
 ```python
 # print the intercept
 print(lm.intercept_)
 ```
-
     -2640159.7968526958
-
-
 
 ```python
 coeff_df = pd.DataFrame(lm.coef_,X.columns,columns=['Coefficient'])
 coeff_df
 ```
-
-
-
-
 <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -441,8 +370,6 @@ coeff_df
 </table>
 </div>
 
-
-
 Interpreting the coefficients:
 
 - Holding all other features fixed, a 1 unit increase in **Avg. Area Income** is associated with an **increase of \$21.52 **.
@@ -451,45 +378,29 @@ Interpreting the coefficients:
 - Holding all other features fixed, a 1 unit increase in **Avg. Area Number of Bedrooms** is associated with an **increase of \$2233.80 **.
 - Holding all other features fixed, a 1 unit increase in **Area Population** is associated with an **increase of \$15.15 **.
 
-
-
 ### Predictions from our Model
-
-
 
 ```python
 predictions = lm.predict(X_test)
 ```
 
-
 ```python
 plt.scatter(y_test,predictions)
 ```
 
-
-
-
     <matplotlib.collections.PathCollection at 0x211a851e2e8>
-
-
-
 
 ![png](/Tathastu/images/LinearRegressionwithPythonBlog/output_28_1.png)
 
-
 **Residual Histogram**
-
 
 ```python
 sns.distplot((y_test-predictions),bins=50);
 ```
 
-
 ![png](/Tathastu/images/LinearRegressionwithPythonBlog/output_30_0.png)
 
-
 ## Regression Evaluation Metrics
-
 
 Here are three common evaluation metrics for regression problems:
 
@@ -513,11 +424,9 @@ Comparing these metrics:
 
 All of these are **loss functions**, because we want to minimize them.
 
-
 ```python
 from sklearn import metrics
 ```
-
 
 ```python
 print('MAE:', metrics.mean_absolute_error(y_test, predictions))
