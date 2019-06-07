@@ -9,10 +9,7 @@ categories: [MachineLearning]
 ---
 
 ### Logistic Regression on Determining User Clicks on Ads
-
-
 # Logistic Regression Project
-
 The data set contains the following features:
 
 * 'Daily Time Spent on Site': consumer time on site in minutes
@@ -26,7 +23,6 @@ The data set contains the following features:
 * 'Timestamp': Time at which consumer clicked on Ad or closed window
 * 'Clicked on Ad': 0 or 1 indicated clicking on Ad
 
-
 ```python
 ## Import Libraries
 import pandas as pd
@@ -35,24 +31,15 @@ import matplotlib.pyplot as plt
 %matplotlib inline
 import numpy as np
 ```
-
 ## Get the Data
-
-
 ```python
 ad_data=pd.read_csv('advertising.csv')
 ```
-
 **Check the head of ad_data**
-
 
 ```python
 ad_data.head()
 ```
-
-
-
-
 <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -153,13 +140,9 @@ ad_data.head()
 </table>
 </div>
 
-
-
-
 ```python
 ad_data.info()
 ```
-
     <class 'pandas.core.frame.DataFrame'>
     RangeIndex: 1000 entries, 0 to 999
     Data columns (total 10 columns):
@@ -176,14 +159,9 @@ ad_data.info()
     dtypes: float64(3), int64(3), object(4)
     memory usage: 78.2+ KB
 
-
-
 ```python
 ad_data.describe()
 ```
-
-
-
 
 <div>
 <style scoped>
@@ -288,16 +266,10 @@ ad_data.describe()
 </table>
 </div>
 
-
-
-
 ```python
 #check for nulls
 ad_data.isnull().head()
 ```
-
-
-
 
 <div>
 <style scoped>
@@ -399,149 +371,82 @@ ad_data.isnull().head()
 </table>
 </div>
 
-
-
-
 ```python
 sns.heatmap(ad_data.isnull(),yticklabels=False,cbar=False,cmap='viridis')
 ```
 
-
-
-
     <matplotlib.axes._subplots.AxesSubplot at 0x1c270c150b8>
-
-
-
 
 ![png](/Tathastu/images/LogisticRegressionAdvertisingDataBlog/output_9_1.png)
 
-
 ## Exploratory Data Analysis
-
 
 ```python
 #seems most of the age group is between 30 to 40
 ad_data['Age'].hist(bins=30)
 ```
 
-
-
-
     <matplotlib.axes._subplots.AxesSubplot at 0x1c270cc4080>
 
-
-
-
 ![png](/Tathastu/images/LogisticRegressionAdvertisingDataBlog/output_11_1.png)
-
-
 
 ```python
 #histogram for distribution of age
 sns.distplot(ad_data['Age'],bins=30,kde=False)
 ```
-
-
-
-
     <matplotlib.axes._subplots.AxesSubplot at 0x1c270d6df28>
 
-
-
-
 ![png](/Tathastu/images/LogisticRegressionAdvertisingDataBlog/output_12_1.png)
-
-
 
 ```python
 # jointplot for distribution of area vs income age
 sns.jointplot(x='Age',y='Area Income',data=ad_data)
 ```
-
-
-
-
     <seaborn.axisgrid.JointGrid at 0x1c270c856a0>
 
-
-
-
 ![png](/Tathastu/images/LogisticRegressionAdvertisingDataBlog/output_13_1.png)
-
-
 
 ```python
 #kde plot
 sns.jointplot(x='Age',y='Daily Time Spent on Site',kind='kde',data=ad_data, color='green')
 ```
 
-
-
-
     <seaborn.axisgrid.JointGrid at 0x1c270ed90f0>
 
-
-
-
 ![png](/Tathastu/images/LogisticRegressionAdvertisingDataBlog/output_14_1.png)
-
-
 
 ```python
 sns.jointplot(x='Daily Time Spent on Site',y='Daily Internet Usage',data=ad_data)
 ```
-
-
-
-
     <seaborn.axisgrid.JointGrid at 0x1c271054a20>
 
-
-
-
 ![png](/Tathastu/images/LogisticRegressionAdvertisingDataBlog/output_15_1.png)
-
-
 
 ```python
 sns.pairplot(ad_data)
 ```
-
-
-
-
     <seaborn.axisgrid.PairGrid at 0x1c2711127f0>
-
-
-
 
 ![png](/Tathastu/images/LogisticRegressionAdvertisingDataBlog/output_16_1.png)
 
-
 ## Logistic Regression
-
 
 ```python
 X=ad_data[['Daily Time Spent on Site','Age','Area Income','Daily Internet Usage', 'Male']]
 y=ad_data['Clicked on Ad']
 ```
 
-
 ```python
 from sklearn.model_selection import train_test_split
 ```
-
 
 ```python
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.33, random_state=42)
 ```
 
-
 ```python
 from sklearn.linear_model import LogisticRegression
 ```
-
 
 ```python
 logmodel = LogisticRegression()
@@ -551,10 +456,6 @@ logmodel.fit(X_train,y_train)
     c:\programdata\miniconda3\lib\site-packages\sklearn\linear_model\logistic.py:432: FutureWarning: Default solver will be changed to 'lbfgs' in 0.22. Specify a solver to silence this warning.
       FutureWarning)
 
-
-
-
-
     LogisticRegression(C=1.0, class_weight=None, dual=False, fit_intercept=True,
                        intercept_scaling=1, l1_ratio=None, max_iter=100,
                        multi_class='warn', n_jobs=None, penalty='l2',
@@ -562,24 +463,19 @@ logmodel.fit(X_train,y_train)
                        warm_start=False)
 
 
-
 ## Predictions and Evaluations
-
 
 ```python
 predictions = logmodel.predict(X_test)
 ```
 
-
 ```python
 from sklearn.metrics import classification_report
 ```
 
-
 ```python
 print(classification_report(y_test,predictions))
 ```
-
                   precision    recall  f1-score   support
 
                0       0.87      0.96      0.91       162
@@ -590,20 +486,15 @@ print(classification_report(y_test,predictions))
     weighted avg       0.91      0.91      0.91       330
 
 
-
-
 ```python
 from sklearn.metrics import confusion_matrix
 ```
 
-
 ```python
 print(confusion_matrix(y_test,predictions))
 ```
-
     [[156   6]
      [ 24 144]]
-
 
 
 ```python
