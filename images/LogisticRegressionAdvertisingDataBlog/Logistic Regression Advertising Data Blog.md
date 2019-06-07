@@ -1,17 +1,5 @@
----
-layout: post
-title: Linear Regression Model on Ecommerce data
-description: >
 
-image:
-noindex: true
-categories: [MachineLearning]
----
-
-### Logistic Regression on Determining User Clicks on Ads
-
-
-# Logistic Regression Project
+# Logistic Regression Project 
 
 The data set contains the following features:
 
@@ -175,7 +163,7 @@ ad_data.info()
     Clicked on Ad               1000 non-null int64
     dtypes: float64(3), int64(3), object(4)
     memory usage: 78.2+ KB
-
+    
 
 
 ```python
@@ -414,14 +402,14 @@ sns.heatmap(ad_data.isnull(),yticklabels=False,cbar=False,cmap='viridis')
 
 
 
-![png](/Tathastu/images/LogisticRegressionAdvertisingDataBlog/output_9_1.png)
+![png](output_9_1.png)
 
 
 ## Exploratory Data Analysis
 
 
 ```python
-#seems most of the age group is between 30 to 40
+#seems most of the age group is between 30 to 40 
 ad_data['Age'].hist(bins=30)
 ```
 
@@ -433,7 +421,7 @@ ad_data['Age'].hist(bins=30)
 
 
 
-![png](/Tathastu/images/LogisticRegressionAdvertisingDataBlog/output_11_1.png)
+![png](output_11_1.png)
 
 
 
@@ -450,7 +438,7 @@ sns.distplot(ad_data['Age'],bins=30,kde=False)
 
 
 
-![png](/Tathastu/images/LogisticRegressionAdvertisingDataBlog/output_12_1.png)
+![png](output_12_1.png)
 
 
 
@@ -467,7 +455,7 @@ sns.jointplot(x='Age',y='Area Income',data=ad_data)
 
 
 
-![png](/Tathastu/images/LogisticRegressionAdvertisingDataBlog/output_13_1.png)
+![png](output_13_1.png)
 
 
 
@@ -484,7 +472,7 @@ sns.jointplot(x='Age',y='Daily Time Spent on Site',kind='kde',data=ad_data, colo
 
 
 
-![png](/Tathastu/images/LogisticRegressionAdvertisingDataBlog/output_14_1.png)
+![png](output_14_1.png)
 
 
 
@@ -500,7 +488,7 @@ sns.jointplot(x='Daily Time Spent on Site',y='Daily Internet Usage',data=ad_data
 
 
 
-![png](/Tathastu/images/LogisticRegressionAdvertisingDataBlog/output_15_1.png)
+![png](output_15_1.png)
 
 
 
@@ -516,7 +504,7 @@ sns.pairplot(ad_data)
 
 
 
-![png](/Tathastu/images/LogisticRegressionAdvertisingDataBlog/output_16_1.png)
+![png](output_16_1.png)
 
 
 ## Logistic Regression
@@ -550,7 +538,7 @@ logmodel.fit(X_train,y_train)
 
     c:\programdata\miniconda3\lib\site-packages\sklearn\linear_model\logistic.py:432: FutureWarning: Default solver will be changed to 'lbfgs' in 0.22. Specify a solver to silence this warning.
       FutureWarning)
-
+    
 
 
 
@@ -581,15 +569,15 @@ print(classification_report(y_test,predictions))
 ```
 
                   precision    recall  f1-score   support
-
+    
                0       0.87      0.96      0.91       162
                1       0.96      0.86      0.91       168
-
+    
         accuracy                           0.91       330
        macro avg       0.91      0.91      0.91       330
     weighted avg       0.91      0.91      0.91       330
-
-
+    
+    
 
 
 ```python
@@ -603,7 +591,7 @@ print(confusion_matrix(y_test,predictions))
 
     [[156   6]
      [ 24 144]]
-
+    
 
 
 ```python
