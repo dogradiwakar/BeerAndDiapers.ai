@@ -8,6 +8,7 @@ noindex: true
 categories: [MachineLearning]
 ---
 
+### Logistic Regression on Determining Titanic Survivors.
 
 
 ```python
