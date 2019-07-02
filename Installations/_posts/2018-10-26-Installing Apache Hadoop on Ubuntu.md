@@ -17,13 +17,13 @@ Java
 sudo apt-get install default-jre
 ```
 
-![](/Tathastu/images/2018/installinghadoop/1.png)
+![](/BeerAndDiapers.ai/images/2018/installinghadoop/1.png)
 
-![](/Tathastu/images/2018/installinghadoop/2.png)
+![](/BeerAndDiapers.ai/images/2018/installinghadoop/2.png)
 ```
 sudo apt-get install default-jdk
 ```
-![](/Tathastu/images/2018/installinghadoop/3.png)
+![](/BeerAndDiapers.ai/images/2018/installinghadoop/3.png)
 
 **SSH**
 ```
@@ -31,12 +31,12 @@ sudo apt-get install ssh
 
 sudo apt-get install sshd
 ```
-![](/Tathastu/images/2018/installinghadoop/4.png)
+![](/BeerAndDiapers.ai/images/2018/installinghadoop/4.png)
 
 Install Ssh
-![](/Tathastu/images/2018/installinghadoop/5.png)
+![](/BeerAndDiapers.ai/images/2018/installinghadoop/5.png)
 
-![](/Tathastu/images/2018/installinghadoop/6.png)
+![](/BeerAndDiapers.ai/images/2018/installinghadoop/6.png)
 
 **Configure SSH**
 ```
@@ -48,15 +48,15 @@ The second command adds the newly created key to the list of authorized keys so 
 ```
 cat $HOME/.ssh/id_rsa.pub >> $HOME/.ssh/authorized_keys
 ```
-![](/Tathastu/images/2018/installinghadoop/7.png)
+![](/BeerAndDiapers.ai/images/2018/installinghadoop/7.png)
 
-![](/Tathastu/images/2018/installinghadoop/8.png)
+![](/BeerAndDiapers.ai/images/2018/installinghadoop/8.png)
 
 **Install Hadoop**
 ```
 wget http://mirrors.sonic.net/apache/hadoop/common/hadoop-2.9.1/hadoop-2.9.1.tar.gz
 ```
-![](/Tathastu/images/2018/installinghadoop/9.png)
+![](/BeerAndDiapers.ai/images/2018/installinghadoop/9.png)
 ```
 tar xvzf hadoop-2.9.1.tar.gz
 ```
@@ -89,7 +89,7 @@ update-alternatives --config java
 ```
 /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java
 
-![](/Tathastu/images/2018/installinghadoop/10.png)
+![](/BeerAndDiapers.ai/images/2018/installinghadoop/10.png)
 
 
 
@@ -124,7 +124,7 @@ $ which javac
 
 $ readlink -f /usr/bin/javac
 ```
-![](/Tathastu/images/2018/installinghadoop/11.png)
+![](/BeerAndDiapers.ai/images/2018/installinghadoop/11.png)
 ```
 /usr/lib/jvm/java-8-openjdk-amd64/bin/javac
 ```
@@ -253,12 +253,12 @@ Cd /usr/local/hadoop_store/hdfs/namenode 
 
 hadoop namenode -format
 ```
-![](/Tathastu/images/2018/installinghadoop/12.png)
+![](/BeerAndDiapers.ai/images/2018/installinghadoop/12.png)
 
 There will be files created under current folder
-![](/Tathastu/images/2018/installinghadoop/13.png)
+![](/BeerAndDiapers.ai/images/2018/installinghadoop/13.png)
 
-![](/Tathastu/images/2018/installinghadoop/14.png)
+![](/BeerAndDiapers.ai/images/2018/installinghadoop/14.png)
 
 
 Starting Hadoop
@@ -270,14 +270,14 @@ cd /usr/local/hadoop/sbin
 
 /usr/local/hadoop/sbin$ start-all.sh
 ```
-![](/Tathastu/images/2018/installinghadoop/15.png)
+![](/BeerAndDiapers.ai/images/2018/installinghadoop/15.png)
 
-![](/Tathastu/images/2018/installinghadoop/16.png)
+![](/BeerAndDiapers.ai/images/2018/installinghadoop/16.png)
 ```
 Jps
 ```
 
-![](/Tathastu/images/2018/installinghadoop/17.png)
+![](/BeerAndDiapers.ai/images/2018/installinghadoop/17.png)
 
 Web interface
 
@@ -285,7 +285,7 @@ web UI of the NameNode daemon
 
  : http://localhost:50070
 
-![](/Tathastu/images/2018/installinghadoop/18.png)
+![](/BeerAndDiapers.ai/images/2018/installinghadoop/18.png)
 
 
 
