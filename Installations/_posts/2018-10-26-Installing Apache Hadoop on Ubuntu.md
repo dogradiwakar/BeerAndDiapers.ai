@@ -22,6 +22,7 @@ sudo apt-get install default-jre
 ![](/BeerAndDiapers.ai/images/2018/installinghadoop/2.png)
 ```
 sudo apt-get install default-jdk
+sudo apt-get install openjdk-8-jdk
 ```
 ![](/BeerAndDiapers.ai/images/2018/installinghadoop/3.png)
 
