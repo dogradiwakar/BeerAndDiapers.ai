@@ -283,7 +283,7 @@ sns.jointplot(x='Time on Website',y='Yearly Amount Spent', data=df)
 
 
 
-![png](/Tathastu/images/EcommerceDataLinearRegression/output_7_1.png)
+![png](/BeerAndDiapers.ai/images/EcommerceDataLinearRegression/output_7_1.png)
 
 
 
@@ -301,7 +301,7 @@ sns.jointplot(x='Time on App',y='Yearly Amount Spent', data=df)
 
 
 
-![png](/Tathastu/images/EcommerceDataLinearRegression/output_8_1.png)
+![png](/BeerAndDiapers.ai/images/EcommerceDataLinearRegression/output_8_1.png)
 
 
 
@@ -318,7 +318,7 @@ sns.jointplot(x='Time on App',y='Length of Membership', data=df,kind='hex')
 
 
 
-![png](/Tathastu/images/EcommerceDataLinearRegression/output_9_1.png)
+![png](/BeerAndDiapers.ai/images/EcommerceDataLinearRegression/output_9_1.png)
 
 
 
@@ -336,7 +336,7 @@ sns.pairplot(df)
 
 
 
-![png](/Tathastu/images/EcommerceDataLinearRegression/output_10_1.png)
+![png](/BeerAndDiapers.ai/images/EcommerceDataLinearRegression/output_10_1.png)
 
 
 
@@ -352,7 +352,7 @@ sns.distplot(df['Yearly Amount Spent'])
 
 
 
-![png](/Tathastu/images/EcommerceDataLinearRegression/output_11_1.png)
+![png](/BeerAndDiapers.ai/images/EcommerceDataLinearRegression/output_11_1.png)
 
 
 
@@ -369,7 +369,7 @@ sns.lmplot(x='Length of Membership',y='Yearly Amount Spent',data=df)
 
 
 
-![png](/Tathastu/images/EcommerceDataLinearRegression/output_12_1.png)
+![png](/BeerAndDiapers.ai/images/EcommerceDataLinearRegression/output_12_1.png)
 
 
 
@@ -385,7 +385,7 @@ sns.heatmap(df.corr())
 
 
 
-![png](/Tathastu/images/EcommerceDataLinearRegression/output_13_1.png)
+![png](/BeerAndDiapers.ai/images/EcommerceDataLinearRegression/output_13_1.png)
 
 
 # Training & Testing Data
@@ -486,7 +486,7 @@ plt.ylabel('predicted values')
 
 
 
-![png](/Tathastu/images/EcommerceDataLinearRegression/output_27_1.png)
+![png](/BeerAndDiapers.ai/images/EcommerceDataLinearRegression/output_27_1.png)
 
 
 ### Evaluating the Model
@@ -562,7 +562,7 @@ sns.distplot(y_test- prediction, bins=50)
 
 
 
-![png](/Tathastu/images/EcommerceDataLinearRegression/output_34_1.png)
+![png](/BeerAndDiapers.ai/images/EcommerceDataLinearRegression/output_34_1.png)
 
 
 

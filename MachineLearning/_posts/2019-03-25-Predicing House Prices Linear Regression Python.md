@@ -260,7 +260,7 @@ sns.pairplot(USAhousing)
 
     <seaborn.axisgrid.PairGrid at 0x211a5415400>
 
-![png](/Tathastu/images/LinearRegressionwithPythonBlog/output_10_1.png)
+![png](/BeerAndDiapers.ai/images/LinearRegressionwithPythonBlog/output_10_1.png)
 
 ```python
 sns.distplot(USAhousing['Price'])
@@ -268,7 +268,7 @@ sns.distplot(USAhousing['Price'])
 
     <matplotlib.axes._subplots.AxesSubplot at 0x211a76deba8>
 
-![png](/Tathastu/images/LinearRegressionwithPythonBlog/output_11_1.png)
+![png](/BeerAndDiapers.ai/images/LinearRegressionwithPythonBlog/output_11_1.png)
 
 ```python
 sns.heatmap(USAhousing.corr())
@@ -276,7 +276,7 @@ sns.heatmap(USAhousing.corr())
 
     <matplotlib.axes._subplots.AxesSubplot at 0x21197c204a8>
 
-![png](/Tathastu/images/LinearRegressionwithPythonBlog/output_12_1.png)
+![png](/BeerAndDiapers.ai/images/LinearRegressionwithPythonBlog/output_12_1.png)
 
 ## Training a Linear Regression Model
 
@@ -390,7 +390,7 @@ plt.scatter(y_test,predictions)
 
     <matplotlib.collections.PathCollection at 0x211a851e2e8>
 
-![png](/Tathastu/images/LinearRegressionwithPythonBlog/output_28_1.png)
+![png](/BeerAndDiapers.ai/images/LinearRegressionwithPythonBlog/output_28_1.png)
 
 **Residual Histogram**
 
@@ -398,7 +398,7 @@ plt.scatter(y_test,predictions)
 sns.distplot((y_test-predictions),bins=50);
 ```
 
-![png](/Tathastu/images/LinearRegressionwithPythonBlog/output_30_0.png)
+![png](/BeerAndDiapers.ai/images/LinearRegressionwithPythonBlog/output_30_0.png)
 
 ## Regression Evaluation Metrics
 

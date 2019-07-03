@@ -433,7 +433,7 @@ sns.heatmap(train.isnull(), yticklabels=False, cbar=False,cmap='viridis')
 
 
 
-![png](/Tathastu/images/LogisticRegressionTitanicDataBlog/output_7_1.png)
+![png](/BeerAndDiapers.ai/images/LogisticRegressionTitanicDataBlog/output_7_1.png)
 
 
 
@@ -450,7 +450,7 @@ sns.countplot(x='Survived',data=train,label=True)
 
 
 
-![png](/Tathastu/images/LogisticRegressionTitanicDataBlog/output_8_1.png)
+![png](/BeerAndDiapers.ai/images/LogisticRegressionTitanicDataBlog/output_8_1.png)
 
 
 
@@ -467,7 +467,7 @@ sns.countplot(x='Survived',hue='Sex',data=train)
 
 
 
-![png](/Tathastu/images/LogisticRegressionTitanicDataBlog/output_9_1.png)
+![png](/BeerAndDiapers.ai/images/LogisticRegressionTitanicDataBlog/output_9_1.png)
 
 
 
@@ -484,7 +484,7 @@ sns.countplot(x='Survived',hue='Pclass',data=train)
 
 
 
-![png](/Tathastu/images/LogisticRegressionTitanicDataBlog/output_10_1.png)
+![png](/BeerAndDiapers.ai/images/LogisticRegressionTitanicDataBlog/output_10_1.png)
 
 
 
@@ -501,7 +501,7 @@ sns.distplot(train['Age'].dropna(),kde=False,bins=30)
 
 
 
-![png](/Tathastu/images/LogisticRegressionTitanicDataBlog/output_11_1.png)
+![png](/BeerAndDiapers.ai/images/LogisticRegressionTitanicDataBlog/output_11_1.png)
 
 
 
@@ -518,7 +518,7 @@ train['Age'].hist(bins=30)
 
 
 
-![png](/Tathastu/images/LogisticRegressionTitanicDataBlog/output_12_1.png)
+![png](/BeerAndDiapers.ai/images/LogisticRegressionTitanicDataBlog/output_12_1.png)
 
 
 
@@ -536,7 +536,7 @@ sns.countplot(x='SibSp',data=train)
 
 
 
-![png](/Tathastu/images/LogisticRegressionTitanicDataBlog/output_13_1.png)
+![png](/BeerAndDiapers.ai/images/LogisticRegressionTitanicDataBlog/output_13_1.png)
 
 
 
@@ -554,7 +554,7 @@ sns.distplot(train['Fare'],bins=40,kde=False)
 
 
 
-![png](/Tathastu/images/LogisticRegressionTitanicDataBlog/output_14_1.png)
+![png](/BeerAndDiapers.ai/images/LogisticRegressionTitanicDataBlog/output_14_1.png)
 
 
 
@@ -571,7 +571,7 @@ train['Fare'].hist(bins=40)
 
 
 
-![png](/Tathastu/images/LogisticRegressionTitanicDataBlog/output_15_1.png)
+![png](/BeerAndDiapers.ai/images/LogisticRegressionTitanicDataBlog/output_15_1.png)
 
 
    ## Data Cleaning
@@ -590,7 +590,7 @@ sns.boxplot(x='Pclass',y='Age', data=train)
 
 
 
-![png](/Tathastu/images/LogisticRegressionTitanicDataBlog/output_17_1.png)
+![png](/BeerAndDiapers.ai/images/LogisticRegressionTitanicDataBlog/output_17_1.png)
 
 
 
@@ -631,7 +631,7 @@ sns.heatmap(train.isnull(),yticklabels=False,cbar=False,cmap='viridis')
 
 
 
-![png](/Tathastu/images/LogisticRegressionTitanicDataBlog/output_20_1.png)
+![png](/BeerAndDiapers.ai/images/LogisticRegressionTitanicDataBlog/output_20_1.png)
 
 
 
@@ -770,7 +770,7 @@ sns.heatmap(train.isnull(),yticklabels=False,cbar=False,cmap='viridis')
 
 
 
-![png](/Tathastu/images/LogisticRegressionTitanicDataBlog/output_23_1.png)
+![png](/BeerAndDiapers.ai/images/LogisticRegressionTitanicDataBlog/output_23_1.png)
 
 
 

@@ -380,7 +380,7 @@ sns.heatmap(ad_data.isnull(),yticklabels=False,cbar=False,cmap='viridis')
 
     <matplotlib.axes._subplots.AxesSubplot at 0x1c270c150b8>
 
-![png](/Tathastu/images/LogisticRegressionAdvertisingDataBlog/output_9_1.png)
+![png](/BeerAndDiapers.ai/images/LogisticRegressionAdvertisingDataBlog/output_9_1.png)
 
 ## Exploratory Data Analysis
 
@@ -391,7 +391,7 @@ ad_data['Age'].hist(bins=30)
 
     <matplotlib.axes._subplots.AxesSubplot at 0x1c270cc4080>
 
-![png](/Tathastu/images/LogisticRegressionAdvertisingDataBlog/output_11_1.png)
+![png](/BeerAndDiapers.ai/images/LogisticRegressionAdvertisingDataBlog/output_11_1.png)
 
 ```python
 #histogram for distribution of age
@@ -399,7 +399,7 @@ sns.distplot(ad_data['Age'],bins=30,kde=False)
 ```
     <matplotlib.axes._subplots.AxesSubplot at 0x1c270d6df28>
 
-![png](/Tathastu/images/LogisticRegressionAdvertisingDataBlog/output_12_1.png)
+![png](/BeerAndDiapers.ai/images/LogisticRegressionAdvertisingDataBlog/output_12_1.png)
 
 ```python
 # jointplot for distribution of area vs income age
@@ -407,7 +407,7 @@ sns.jointplot(x='Age',y='Area Income',data=ad_data)
 ```
     <seaborn.axisgrid.JointGrid at 0x1c270c856a0>
 
-![png](/Tathastu/images/LogisticRegressionAdvertisingDataBlog/output_13_1.png)
+![png](/BeerAndDiapers.ai/images/LogisticRegressionAdvertisingDataBlog/output_13_1.png)
 
 ```python
 #kde plot
@@ -416,21 +416,21 @@ sns.jointplot(x='Age',y='Daily Time Spent on Site',kind='kde',data=ad_data, colo
 
     <seaborn.axisgrid.JointGrid at 0x1c270ed90f0>
 
-![png](/Tathastu/images/LogisticRegressionAdvertisingDataBlog/output_14_1.png)
+![png](/BeerAndDiapers.ai/images/LogisticRegressionAdvertisingDataBlog/output_14_1.png)
 
 ```python
 sns.jointplot(x='Daily Time Spent on Site',y='Daily Internet Usage',data=ad_data)
 ```
     <seaborn.axisgrid.JointGrid at 0x1c271054a20>
 
-![png](/Tathastu/images/LogisticRegressionAdvertisingDataBlog/output_15_1.png)
+![png](/BeerAndDiapers.ai/images/LogisticRegressionAdvertisingDataBlog/output_15_1.png)
 
 ```python
 sns.pairplot(ad_data)
 ```
     <seaborn.axisgrid.PairGrid at 0x1c2711127f0>
 
-![png](/Tathastu/images/LogisticRegressionAdvertisingDataBlog/output_16_1.png)
+![png](/BeerAndDiapers.ai/images/LogisticRegressionAdvertisingDataBlog/output_16_1.png)
 
 ## Logistic Regression
 
