@@ -10,17 +10,18 @@ tags: [Installations]
 ---
 
 ---
+
 **Pre-requisites**
 
 ***Install Brew***
 
 Go to Brew Website
-https://brew.sh/
+[https://brew.sh/](https://brew.sh/)
 
 ![](/BeerAndDiapers.ai/images/2018/installingHadoppOnMacos/1.png)
 
 Copy the url from Home page on mac os terminal to install Home brew
-![](/BeerAndDiapers.ai/images/2018/installingHadoppOn Macos/2.png)
+![](/BeerAndDiapers.ai/images/2018/installingHadoppOnMacos/2.png)
 
 
 **Java Installation**
@@ -29,13 +30,14 @@ Check Java Version
 
 `Java -version`
 
-![](/BeerAndDiapers.ai/images/2018/installingHadoppOn Macos/3.png)
+![](/BeerAndDiapers.ai/images/2018/installingHadoppOnMacos/3.png)
 
 
 Check below url for supported versions
-https://cwiki.apache.org/confluence/display/HADOOP/Hadoop+Java+Versions
 
-![](/BeerAndDiapers.ai/images/2018/installingHadoppOn Macos/4.png)
+[https://cwiki.apache.org/confluence/display/HADOOP/Hadoop+Java+Versions](https://cwiki.apache.org/confluence/display/HADOOP/Hadoop+Java+Versions)
+
+![](/BeerAndDiapers.ai/images/2018/installingHadoppOnMacos/4.png)
 Run below command to install Java8 as it is supported by Hadoop 3.0
 
     brew cask install java8
@@ -49,7 +51,7 @@ For Latest Java use
 
 Check Java Version
 
-![](/BeerAndDiapers.ai/images/2018/installingHadoppOn Macos/5.png)
+![](/BeerAndDiapers.ai/images/2018/installingHadoppOnMacos/5.png)
 
 **Install Hadoop using brew**
 
@@ -57,13 +59,13 @@ Run below command
 
     Brew install hadoop
 
-![](/BeerAndDiapers.ai/images/2018/installingHadoppOn Macos/6.png)
+![](/BeerAndDiapers.ai/images/2018/installingHadoppOnMacos/6.png)
 
 
-![](/BeerAndDiapers.ai/images/2018/installingHadoppOn Macos/7.png)
+![](/BeerAndDiapers.ai/images/2018/installingHadoppOnMacos/7.png)
 
 
-Configuration Changes
+**Configuration Changes**
 
 Go to  /usr/local/Cellar/hadoop/3.2.1 and make some changes or create the following files
 
@@ -79,8 +81,8 @@ Run below command to get the Java home
 
     /usr/libexec/java_home
 
-![](/BeerAndDiapers.ai/images/2018/installingHadoppOn Macos/8.png)
-![](/BeerAndDiapers.ai/images/2018/installingHadoppOn Macos/9.png)
+![](/BeerAndDiapers.ai/images/2018/installingHadoppOnMacos/8.png)
+![](/BeerAndDiapers.ai/images/2018/installingHadoppOnMacos/9.png)
 
 
 
@@ -88,7 +90,7 @@ Run below command to get the Java home
 **core-site.xml**
 
 In core-site.xml, you will configure the HDFS address and port number.
-
+```
 <!-- Put site-specific property overrides in this file. -->
 <configuration>
   <property>
@@ -101,8 +103,9 @@ In core-site.xml, you will configure the HDFS address and port number.
     <value>hdfs://localhost:8020</value>
   </property>
 </configuration>
+```
 
-![](/BeerAndDiapers.ai/images/2018/installingHadoppOn Macos/10.png)
+![](/BeerAndDiapers.ai/images/2018/installingHadoppOnMacos/10.png)
 
 
 
@@ -110,27 +113,30 @@ In core-site.xml, you will configure the HDFS address and port number.
 
 
 Add the following into mapred-site.xml .
+```
 <configuration>
   <property>
     <name>mapred.job.tracker</name>
     <value>localhost:8021</value>
   </property>
 </configuration>
-![](/BeerAndDiapers.ai/images/2018/installingHadoppOn Macos/11.png)
+```
+![](/BeerAndDiapers.ai/images/2018/installingHadoppOnMacos/11.png)
 
 
 
 **hdfs-site.xml**
 
 In hdfs-site.xml ,add below
-
+```
 <configuration>
   <property>
     <name>dfs.replication</name>
     <value>1</value>
   </property>
 </configuration>
-![](/BeerAndDiapers.ai/images/2018/installingHadoppOn Macos/12.png)
+```
+![](/BeerAndDiapers.ai/images/2018/installingHadoppOnMacos/12.png)
 
 
 **Configure SSH**
@@ -140,7 +146,7 @@ Check if ssh is enabled using below command
     ssh localhost
 
 In case of below error configure ssh
-![](/BeerAndDiapers.ai/images/2018/installingHadoppOn Macos/13.png)
+![](/BeerAndDiapers.ai/images/2018/installingHadoppOnMacos/13.png)
 
 Run below commands and Authorize SSH Keys i.e allow your system to accept login, we have to make it aware of the keys that will be used
 
@@ -152,7 +158,7 @@ Enable Remote Login: “System Preferences” -> “Sharing”. Check “Remote 
 
 Check ssh again using ssh localhost
 
-![](/BeerAndDiapers.ai/images/2018/installingHadoppOn Macos/14.png)
+![](/BeerAndDiapers.ai/images/2018/installingHadoppOnMacos/14.png)
 
 
 **Format HDFS**
@@ -163,8 +169,8 @@ Finally, the last step before starting to launch the different services would be
 
     hdfs namenode -format
 
-![](/BeerAndDiapers.ai/images/2018/installingHadoppOn Macos/15.png)
-![](/BeerAndDiapers.ai/images/2018/installingHadoppOn Macos/16.png)
+![](/BeerAndDiapers.ai/images/2018/installingHadoppOnMacos/15.png)
+![](/BeerAndDiapers.ai/images/2018/installingHadoppOnMacos/16.png)
 
 
 
@@ -175,14 +181,14 @@ Now, we need to go to /usr/local/Cellar/hadoop/3.2.1/sbin/ to start and stop had
 Edit ~/.bash_profile and add
 
     nano ~/.profile
-
+```
 alias hstart="/usr/local/Cellar/hadoop/3.2.1/sbin/start-all.sh"
 alias hstop="/usr/local/Cellar/hadoop/3.2.1/sbin/stop-all.sh"
-
+```
 Then run
-
-    source ~/.bash_profile
-
+```
+source ~/.bash_profile
+```
 
 Manual starting
 
@@ -190,23 +196,25 @@ HDFS Services
 Go to /usr/local/opt/hadoop/sbin , there you can use the following scripts
 
 **To start HDFS service**
+```
 $ ./start-dfs.sh# To stop HDFS service
 $ ./stop-dfs.sh
-
+```
 
 **To start all services**
+```
 $ ./start-all.sh# to stop all services
 $ ./stop-all.sh
-
+```
 
 
 Start Hadoop using the hstart alias
-![](/BeerAndDiapers.ai/images/2018/installingHadoppOn Macos/17.png)
+![](/BeerAndDiapers.ai/images/2018/installingHadoppOnMacos/17.png)
 
 
 
 Run JPS to check the services
-![](/BeerAndDiapers.ai/images/2018/installingHadoppOn Macos/19.png)
+![](/BeerAndDiapers.ai/images/2018/installingHadoppOnMacos/19.png)
 
 Access Hadoop web interface by connecting to
 
@@ -215,5 +223,5 @@ JobTracker: http://localhost:8088/
 Node Specific Info: http://localhost:8042/
 Name Node
 
-![](/BeerAndDiapers.ai/images/2018/installingHadoppOn Macos/20.png)
-![](/BeerAndDiapers.ai/images/2018/installingHadoppOn Macos/21.png)
+![](/BeerAndDiapers.ai/images/2018/installingHadoppOnMacos/20.png)
+![](/BeerAndDiapers.ai/images/2018/installingHadoppOnMacos/21.png)
