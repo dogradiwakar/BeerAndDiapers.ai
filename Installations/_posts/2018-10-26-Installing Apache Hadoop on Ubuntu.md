@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Installing Apache Hadoop on Mac OS
+title: Installing Apache Hadoop on Ubuntu
 description: >
 
 author: author1

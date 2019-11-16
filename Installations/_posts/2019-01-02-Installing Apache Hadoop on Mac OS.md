@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Installing Hadoop on Ubuntu
+title: Installing Hadoop on Mac OS
 description: >
 
 author: author1
@@ -11,7 +11,7 @@ tags: [Installations]
 
 
 
-Pre-requisites
+**Pre-requisites**
 
 Install Brew
 
