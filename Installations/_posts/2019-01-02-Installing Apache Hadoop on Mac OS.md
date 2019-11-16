@@ -57,7 +57,7 @@ Brew install hadoop
 ![](/BeerAndDiapers.ai/images/2018/installingHadoppOn Macos/6.png)
 
 
-
+![](/BeerAndDiapers.ai/images/2018/installingHadoppOn Macos/7.png)
 
 
 Configuration Changes
@@ -75,7 +75,8 @@ In  /usr/local/Cellar/hadoop/3.2.1/libexec/etc/hadoop/hadoop-env.sh  look for
 Run below command to get the Java home
 
 /usr/libexec/java_home
-
+![](/BeerAndDiapers.ai/images/2018/installingHadoppOn Macos/8.png)
+![](/BeerAndDiapers.ai/images/2018/installingHadoppOn Macos/9.png)
 
 
 
@@ -97,7 +98,7 @@ In core-site.xml, you will configure the HDFS address and port number.
   </property>
 </configuration>
 
-
+![](/BeerAndDiapers.ai/images/2018/installingHadoppOn Macos/10.png)
 
 
 
@@ -111,7 +112,7 @@ Add the following into mapred-site.xml .
     <value>localhost:8021</value>
   </property>
 </configuration>
-
+![](/BeerAndDiapers.ai/images/2018/installingHadoppOn Macos/11.png)
 
 
 
@@ -125,7 +126,7 @@ In hdfs-site.xml ,add below
     <value>1</value>
   </property>
 </configuration>
-
+![](/BeerAndDiapers.ai/images/2018/installingHadoppOn Macos/12.png)
 
 
 Configure SSH
@@ -134,7 +135,7 @@ Check if ssh is enabled using below command
 ssh localhost
 
 In case of below error configure ssh
-
+![](/BeerAndDiapers.ai/images/2018/installingHadoppOn Macos/13.png)
 
 Run below commands and Authorize SSH Keys i.e allow your system to accept login, we have to make it aware of the keys that will be used
 
@@ -146,7 +147,7 @@ Enable Remote Login: “System Preferences” -> “Sharing”. Check “Remote 
 
 Check ssh again using ssh localhost
 
-
+![](/BeerAndDiapers.ai/images/2018/installingHadoppOn Macos/14.png)
 
 
 Format HDFS
@@ -155,8 +156,8 @@ Finally, the last step before starting to launch the different services would be
 cd /usr/local/opt/hadoop
 hdfs namenode -format
 
-
-
+![](/BeerAndDiapers.ai/images/2018/installingHadoppOn Macos/15.png)
+![](/BeerAndDiapers.ai/images/2018/installingHadoppOn Macos/16.png)
 
 
 
@@ -192,12 +193,12 @@ $ ./stop-all.sh
 
 
 Start Hadoop using the hstart alias
-
+![](/BeerAndDiapers.ai/images/2018/installingHadoppOn Macos/17.png)
 
 
 
 Run JPS to check the services
-
+![](/BeerAndDiapers.ai/images/2018/installingHadoppOn Macos/19.png)
 
 Access Hadoop web interface by connecting to
 
@@ -205,3 +206,6 @@ Resource Manager: http://localhost:9870
 JobTracker: http://localhost:8088/
 Node Specific Info: http://localhost:8042/
 Name Node
+
+![](/BeerAndDiapers.ai/images/2018/installingHadoppOn Macos/20.png)
+![](/BeerAndDiapers.ai/images/2018/installingHadoppOn Macos/21.png)
