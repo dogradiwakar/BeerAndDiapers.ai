@@ -8,6 +8,17 @@ canonical_url:
 categories: [Installations]
 tags: [Installations]
 ---
+
+---
+layout: post
+title: Installing Hadoop on Mac OS
+description: >
+
+author: author1
+canonical_url:
+categories: [Installations]
+tags: [Installations]
+---
 **Pre-requisites**
 
 ***Install Brew***
@@ -21,11 +32,11 @@ Copy the url from Home page on mac os terminal to install Home brew
 ![](/BeerAndDiapers.ai/images/2018/installingHadoppOn Macos/2.png)
 
 
-Java Installation
+**Java Installation**
 
 Check Java Version
 
-'''Java -version
+`Java -version`
 
 ![](/BeerAndDiapers.ai/images/2018/installingHadoppOn Macos/3.png)
 
@@ -36,23 +47,24 @@ https://cwiki.apache.org/confluence/display/HADOOP/Hadoop+Java+Versions
 ![](/BeerAndDiapers.ai/images/2018/installingHadoppOn Macos/4.png)
 Run below command to install Java8 as it is supported by Hadoop 3.0
 
-brew cask install java8
+    brew cask install java8
 
 
 
 
 For Latest Java use
 
-brew cask install java
+    brew cask install java
 
 Check Java Version
 
 ![](/BeerAndDiapers.ai/images/2018/installingHadoppOn Macos/5.png)
 
-Install Hadoop using brew
+**Install Hadoop using brew**
+
 Run below command
 
-Brew install hadoop
+    Brew install hadoop
 
 ![](/BeerAndDiapers.ai/images/2018/installingHadoppOn Macos/6.png)
 
@@ -62,26 +74,27 @@ Brew install hadoop
 
 Configuration Changes
 
-Go to  /usr/local/Cellar/hadoop/3.2.1 and make some changes or create the following files
+Go to  /usr/local/Cellar/hadoop/3.2.1 and make some changes or create the following files
 
 	1. hadoop-env.sh
 	2. core-site.xml
 	3. mapred-site.xml
 	4. hdfs-site.xml
 
-hadoop-env.sh
-In  /usr/local/Cellar/hadoop/3.2.1/libexec/etc/hadoop/hadoop-env.sh  look for export JAVA_HOME and configure it to the Java home value
+**hadoop-env.sh**
+In  /usr/local/Cellar/hadoop/3.2.1/libexec/etc/hadoop/hadoop-env.sh  look for export JAVA_HOME and configure it to the Java home value
 
 Run below command to get the Java home
 
-/usr/libexec/java_home
+    /usr/libexec/java_home
+
 ![](/BeerAndDiapers.ai/images/2018/installingHadoppOn Macos/8.png)
 ![](/BeerAndDiapers.ai/images/2018/installingHadoppOn Macos/9.png)
 
 
 
 
-core-site.xml
+**core-site.xml**
 
 In core-site.xml, you will configure the HDFS address and port number.
 
@@ -102,7 +115,7 @@ In core-site.xml, you will configure the HDFS address and port number.
 
 
 
-mapred-site.xml
+**mapred-site.xml**
 
 
 Add the following into mapred-site.xml .
@@ -116,7 +129,7 @@ Add the following into mapred-site.xml .
 
 
 
-hdfs-site.xml
+**hdfs-site.xml**
 
 In hdfs-site.xml ,add below
 
@@ -129,10 +142,11 @@ In hdfs-site.xml ,add below
 ![](/BeerAndDiapers.ai/images/2018/installingHadoppOn Macos/12.png)
 
 
-Configure SSH
+**Configure SSH**
 
 Check if ssh is enabled using below command
-ssh localhost
+
+    ssh localhost
 
 In case of below error configure ssh
 ![](/BeerAndDiapers.ai/images/2018/installingHadoppOn Macos/13.png)
@@ -150,11 +164,13 @@ Check ssh again using ssh localhost
 ![](/BeerAndDiapers.ai/images/2018/installingHadoppOn Macos/14.png)
 
 
-Format HDFS
+**Format HDFS**
 
 Finally, the last step before starting to launch the different services would be to format the HDFS.
-cd /usr/local/opt/hadoop
-hdfs namenode -format
+
+    cd /usr/local/opt/hadoop
+
+    hdfs namenode -format
 
 ![](/BeerAndDiapers.ai/images/2018/installingHadoppOn Macos/15.png)
 ![](/BeerAndDiapers.ai/images/2018/installingHadoppOn Macos/16.png)
@@ -163,30 +179,31 @@ hdfs namenode -format
 
 Alias to start and stop Hadoop Daemons
 
-Now, we need to go to /usr/local/Cellar/hadoop/3.2.1/sbin/ to start and stop hadoop services.
+Now, we need to go to /usr/local/Cellar/hadoop/3.2.1/sbin/ to start and stop hadoop services.
 
-Edit ~/.bash_profile and add
+Edit ~/.bash_profile and add
 
-nano ~/.profile
+    nano ~/.profile
 
 alias hstart="/usr/local/Cellar/hadoop/3.2.1/sbin/start-all.sh"
 alias hstop="/usr/local/Cellar/hadoop/3.2.1/sbin/stop-all.sh"
 
 Then run
 
-source ~/.bash_profile
+    source ~/.bash_profile
 
 
 Manual starting
 
 HDFS Services
-Go to /usr/local/opt/hadoop/sbin , there you can use the following scripts
-# To start HDFS service
+Go to /usr/local/opt/hadoop/sbin , there you can use the following scripts
+
+**To start HDFS service**
 $ ./start-dfs.sh# To stop HDFS service
 $ ./stop-dfs.sh
 
 
-# to start all services
+**To start all services**
 $ ./start-all.sh# to stop all services
 $ ./stop-all.sh
 
