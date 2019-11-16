@@ -15,25 +15,25 @@ tags: [Installations]
 Go to Brew Website
 https://brew.sh/
 
-
+![](/BeerAndDiapers.ai/images/2018/installingHadoppOn Macos/1.png)
 
 Copy the url from Home page on mac os terminal to install Home brew
-
+![](/BeerAndDiapers.ai/images/2018/installingHadoppOn Macos/2.png)
 
 
 Java Installation
 
 Check Java Version
 
-Java -version
+'''Java -version
 
-
+![](/BeerAndDiapers.ai/images/2018/installingHadoppOn Macos/3.png)
 
 
 Check below url for supported versions
 https://cwiki.apache.org/confluence/display/HADOOP/Hadoop+Java+Versions
 
-
+![](/BeerAndDiapers.ai/images/2018/installingHadoppOn Macos/4.png)
 Run below command to install Java8 as it is supported by Hadoop 3.0
 
 brew cask install java8
@@ -47,14 +47,14 @@ brew cask install java
 
 Check Java Version
 
-
+![](/BeerAndDiapers.ai/images/2018/installingHadoppOn Macos/5.png)
 
 Install Hadoop using brew
 Run below command
 
 Brew install hadoop
 
-
+![](/BeerAndDiapers.ai/images/2018/installingHadoppOn Macos/6.png)
 
 
 
