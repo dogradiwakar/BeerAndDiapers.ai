@@ -10,7 +10,7 @@ tags: [Installations]
 ---
 **Pre-requisites**
 
-###Install Brew
+***Install Brew***
 
 Go to Brew Website
 https://brew.sh/
