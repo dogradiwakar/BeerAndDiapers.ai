@@ -9,12 +9,12 @@ categories: [Installations]
 tags: [Installations]
 ---
 
----
-
 **Pre-requisites**
 
 ***Install Brew***
+
 Go to Brew Website
+
 [https://brew.sh/](https://brew.sh/)
 
 ![](/BeerAndDiapers.ai/images/installingHadoppOnMacos/1.png)
@@ -26,6 +26,7 @@ Copy the url from Home page on mac os terminal to install Home brew
 **Java Installation**
 
 Check Java Version
+
 `Java -version`
 
 ![](/BeerAndDiapers.ai/images/installingHadoppOnMacos/3.png)
@@ -51,7 +52,8 @@ Check Java Version
 **Install Hadoop using brew**
 
 Run below command
-Brew install hadoop
+
+    Brew install hadoop
 
 ![](/BeerAndDiapers.ai/images/installingHadoppOnMacos/6.png)
 
@@ -70,7 +72,6 @@ Go to  /usr/local/Cellar/hadoop/3.2.1 and make some changes or create the follow
 
 **hadoop-env.sh**
 In  /usr/local/Cellar/hadoop/3.2.1/libexec/etc/hadoop/hadoop-env.sh  look for export JAVA_HOME and configure it to the Java home value
-
 Run below command to get the Java home
 
     /usr/libexec/java_home
@@ -140,14 +141,15 @@ Check if ssh is enabled using below command
     ssh localhost
 
 In case of below error configure ssh
+
 ![](/BeerAndDiapers.ai/images/installingHadoppOnMacos/13.png)
 
 Run below commands and Authorize SSH Keys i.e allow your system to accept login, we have to make it aware of the keys that will be used
-
+```
  ssh-keygen -t rsa -P '' -f ~/.ssh/id_rsa
  cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys
  chmod 0600 ~/.ssh/authorized_keys
-
+```
 Enable Remote Login: “System Preferences” -> “Sharing”. Check “Remote Login”
 
 Check ssh again using ssh localhost
@@ -164,19 +166,19 @@ Finally, the last step before starting to launch the different services would be
     hdfs namenode -format
 
 ![](/BeerAndDiapers.ai/images/installingHadoppOnMacos/15.png)
+
 ![](/BeerAndDiapers.ai/images/installingHadoppOnMacos/16.png)
-
-
 
 Alias to start and stop Hadoop Daemons
 
 Now, we need to go to /usr/local/Cellar/hadoop/3.2.1/sbin/ to start and stop hadoop services.
 
 Edit ~/.bash_profile and add
-
-    nano ~/.profile
 ```
+nano ~/.profile
+
 alias hstart="/usr/local/Cellar/hadoop/3.2.1/sbin/start-all.sh"
+
 alias hstop="/usr/local/Cellar/hadoop/3.2.1/sbin/stop-all.sh"
 ```
 Then run
@@ -189,18 +191,16 @@ Manual starting
 HDFS Services
 Go to /usr/local/opt/hadoop/sbin , there you can use the following scripts
 
-**To start HDFS service**
+**To start hdfs service**
 ```
 $ ./start-dfs.sh# To stop HDFS service
 $ ./stop-dfs.sh
 ```
-
 **To start all services**
 ```
 $ ./start-all.sh# to stop all services
 $ ./stop-all.sh
 ```
-
 
 Start Hadoop using the hstart alias
 ![](/BeerAndDiapers.ai/images/installingHadoppOnMacos/17.png)
@@ -208,14 +208,19 @@ Start Hadoop using the hstart alias
 
 
 Run JPS to check the services
+
 ![](/BeerAndDiapers.ai/images/installingHadoppOnMacos/19.png)
 
 Access Hadoop web interface by connecting to
 
-Resource Manager: http://localhost:9870
-JobTracker: http://localhost:8088/
-Node Specific Info: http://localhost:8042/
+Resource Manager:  [http://localhost:9870](http://localhost:9870)
+
+JobTracker: [http://localhost:8088/](http://localhost:8088/)
+
+Node Specific Info:  [http://localhost:8042/](http://localhost:8042/)
+
 Name Node
 
 ![](/BeerAndDiapers.ai/images/installingHadoppOnMacos/20.png)
+
 ![](/BeerAndDiapers.ai/images/installingHadoppOnMacos/21.png)
