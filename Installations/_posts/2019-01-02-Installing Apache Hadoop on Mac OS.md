@@ -10,15 +10,6 @@ tags: [Installations]
 ---
 
 ---
-layout: post
-title: Installing Hadoop on Mac OS
-description: >
-
-author: author1
-canonical_url:
-categories: [Installations]
-tags: [Installations]
----
 **Pre-requisites**
 
 ***Install Brew***
@@ -26,7 +17,7 @@ tags: [Installations]
 Go to Brew Website
 https://brew.sh/
 
-![](/BeerAndDiapers.ai/images/2018/installingHadoppOn Macos/1.png)
+![](/BeerAndDiapers.ai/images/2018/installingHadoppOnMacos/1.png)
 
 Copy the url from Home page on mac os terminal to install Home brew
 ![](/BeerAndDiapers.ai/images/2018/installingHadoppOn Macos/2.png)
