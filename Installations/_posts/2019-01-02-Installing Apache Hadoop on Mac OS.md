@@ -28,7 +28,7 @@ Copy the url from Home page on mac os terminal to install Home brew
 
 Check Java Version
 ```
-Java -version`
+Java -version
 ```
 ![](/BeerAndDiapers.ai/images/installingHadoppOnMacos/3.png)
 
@@ -48,6 +48,7 @@ For Latest Java use
 brew cask install java
 ```
 ![](/BeerAndDiapers.ai/images/installingHadoppOnMacos/6.png)
+
 Check Java Version
 
 
@@ -55,14 +56,14 @@ Check Java Version
 **Install Hadoop using brew**
 
 Run below command
-
-  Brew install hadoop
-
-
+```
+Brew install hadoop
+```
 
 
 ![](/BeerAndDiapers.ai/images/installingHadoppOnMacos/7.png)
 
+![](/BeerAndDiapers.ai/images/installingHadoppOnMacos/8.png)
 
 **Configuration Changes**
 
@@ -79,11 +80,11 @@ Run below command to get the Java home
 
     /usr/libexec/java_home
 
-![](/BeerAndDiapers.ai/images/installingHadoppOnMacos/8.png)
+
 
 ![](/BeerAndDiapers.ai/images/installingHadoppOnMacos/9.png)
 
-
+![](/BeerAndDiapers.ai/images/installingHadoppOnMacos/10.png)
 
 
 **core-site.xml**
@@ -104,7 +105,7 @@ In core-site.xml, you will configure the HDFS address and port number.
 </configuration>
 ```
 
-![](/BeerAndDiapers.ai/images/installingHadoppOnMacos/10.png)
+![](/BeerAndDiapers.ai/images/installingHadoppOnMacos/11.png)
 
 
 
@@ -120,8 +121,8 @@ Add the following into mapred-site.xml .
   </property>
 </configuration>
 ```
-![](/BeerAndDiapers.ai/images/installingHadoppOnMacos/11.png)
 
+![](/BeerAndDiapers.ai/images/installingHadoppOnMacos/12.png)
 
 
 **hdfs-site.xml**
@@ -135,7 +136,7 @@ In hdfs-site.xml ,add below
   </property>
 </configuration>
 ```
-![](/BeerAndDiapers.ai/images/installingHadoppOnMacos/12.png)
+![](/BeerAndDiapers.ai/images/installingHadoppOnMacos/13.png)
 
 
 **Configure SSH**
@@ -146,7 +147,7 @@ Check if ssh is enabled using below command
 
 In case of below error configure ssh
 
-![](/BeerAndDiapers.ai/images/installingHadoppOnMacos/13.png)
+![](/BeerAndDiapers.ai/images/installingHadoppOnMacos/14.png)
 
 Run below commands and Authorize SSH Keys i.e allow your system to accept login, we have to make it aware of the keys that will be used
 ```
@@ -158,7 +159,7 @@ Enable Remote Login: “System Preferences” -> “Sharing”. Check “Remote 
 
 Check ssh again using ssh localhost
 
-![](/BeerAndDiapers.ai/images/installingHadoppOnMacos/14.png)
+![](/BeerAndDiapers.ai/images/installingHadoppOnMacos/15.png)
 
 
 **Format HDFS**
@@ -169,9 +170,9 @@ Finally, the last step before starting to launch the different services would be
 
     hdfs namenode -format
 
-![](/BeerAndDiapers.ai/images/installingHadoppOnMacos/15.png)
-
 ![](/BeerAndDiapers.ai/images/installingHadoppOnMacos/16.png)
+
+![](/BeerAndDiapers.ai/images/installingHadoppOnMacos/17.png)
 
 Alias to start and stop Hadoop Daemons
 
@@ -207,7 +208,7 @@ $ ./stop-all.sh
 ```
 
 Start Hadoop using the hstart alias
-![](/BeerAndDiapers.ai/images/installingHadoppOnMacos/17.png)
+![](/BeerAndDiapers.ai/images/installingHadoppOnMacos/18.png)
 
 
 
