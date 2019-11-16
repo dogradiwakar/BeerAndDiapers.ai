@@ -47,10 +47,8 @@ For Latest Java use
 ```
 brew cask install java
 ```
-![](/BeerAndDiapers.ai/images/installingHadoppOnMacos/6.png)
-
 Check Java Version
-
+![](/BeerAndDiapers.ai/images/installingHadoppOnMacos/6.png)
 
 
 **Install Hadoop using brew**
