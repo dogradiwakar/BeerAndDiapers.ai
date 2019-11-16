@@ -285,12 +285,14 @@ Web interface
 web UI of the NameNode daemon
 
  : http://localhost:50070
+ http://localhost:9870 for recent versions
 
 ![](/BeerAndDiapers.ai/images/2018/installinghadoop/18.png)
 
 
 
 SecondaryNameNode http://localhost:50090/
+http://localhost:9868 for recent versions
 
 
 [docs]: ../../docs/README.md
