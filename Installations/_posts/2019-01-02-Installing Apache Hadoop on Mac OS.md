@@ -41,16 +41,16 @@ Run below command to install Java8 as it is supported by Hadoop 3.0
 ```
 brew cask install java8
 ```
-
+![](/BeerAndDiapers.ai/images/installingHadoppOnMacos/5.png)
 For Latest Java use
 
 ```
 brew cask install java
 ```
-
+![](/BeerAndDiapers.ai/images/installingHadoppOnMacos/6.png)
 Check Java Version
 
-![](/BeerAndDiapers.ai/images/installingHadoppOnMacos/5.png)
+
 
 **Install Hadoop using brew**
 
@@ -58,7 +58,7 @@ Run below command
 
   Brew install hadoop
 
-![](/BeerAndDiapers.ai/images/installingHadoppOnMacos/6.png)
+
 
 
 ![](/BeerAndDiapers.ai/images/installingHadoppOnMacos/7.png)
