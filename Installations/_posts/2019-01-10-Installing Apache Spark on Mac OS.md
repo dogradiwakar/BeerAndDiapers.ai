@@ -31,6 +31,7 @@ Run below command to update homebrew
 Check Java Version
 
     Java -version
+    
 ![](/BeerAndDiapers.ai/images/apachesparkonmacos/3.png)
 
 Run below command to install Java8
