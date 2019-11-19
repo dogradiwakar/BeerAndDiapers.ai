@@ -31,7 +31,7 @@ Run below command to update homebrew
 Check Java Version
 
     Java -version
-    
+
 ![](/BeerAndDiapers.ai/images/apachesparkonmacos/3.png)
 
 Run below command to install Java8
@@ -87,6 +87,8 @@ Run `pyspark` to start pyspark shell
 ![](/BeerAndDiapers.ai/images/apachesparkonmacos/11.png)
 
 **Add Spark path to bash profile**
+
+
 Run below command and then add the path to the profile
 
     nano ~/.profile
