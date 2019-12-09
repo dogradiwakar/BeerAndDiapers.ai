@@ -8,7 +8,7 @@ canonical_url:
 categories: [Installations]
 tags: [Installations]
 ---
-
+![](/BeerAndDiapers.ai/images/2018/installinghadoop/18.png)
 
 **Pre-requisites**
 
