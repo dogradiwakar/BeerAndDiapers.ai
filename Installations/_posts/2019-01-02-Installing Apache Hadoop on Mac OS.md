@@ -8,6 +8,7 @@ canonical_url:
 categories: [Installations]
 tags: [Installations]
 ---
+![](/BeerAndDiapers.ai/images/installingHadoppOnMacos/21.png)
 
 **Pre-requisites**
 
