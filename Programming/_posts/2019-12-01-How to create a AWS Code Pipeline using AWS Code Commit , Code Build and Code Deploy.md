@@ -8,6 +8,7 @@ canonical_url:
 categories: [Programming,DevOps]
 #tags: [Programming1 , Numpy1]
 ---
+![](/BeerAndDiapers.ai/images/awscodepipeline/0.png)
 ### How to create a AWS Code Pipeline using AWS Code Commit , Code Build and Code Deploy
 
 **CodePipeline - Introduction**
