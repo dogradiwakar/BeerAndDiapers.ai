@@ -9,6 +9,9 @@ categories: [MachineLearning]
 ---
 Logistic Regression on Determining Titanic Survivors.
 ### Logistic Regression on Determining Titanic Survivors.
+
+
+
 ```python
 #Import necessary Libraries
 import pandas as pd
