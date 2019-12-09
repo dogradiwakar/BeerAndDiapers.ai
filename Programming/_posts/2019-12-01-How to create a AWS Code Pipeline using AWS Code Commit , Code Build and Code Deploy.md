@@ -97,7 +97,9 @@ Configure Source
 ![](/BeerAndDiapers.ai/images/awscodepipeline/8.jpg)
 
 Configure environment
+
 ![](/BeerAndDiapers.ai/images/awscodepipeline/9.jpg)
+
 
 ![](/BeerAndDiapers.ai/images/awscodepipeline/10.jpg)
 
