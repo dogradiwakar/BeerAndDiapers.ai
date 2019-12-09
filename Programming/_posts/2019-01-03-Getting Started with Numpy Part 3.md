@@ -8,6 +8,8 @@ canonical_url:
 categories: [Programming,Numpy]
 #tags: [Programming1 , Numpy1]
 ---
+![](/BeerAndDiapers.ai/images/numpy.png)
+
 ### Getting Started with Numpy Part 3
 
 
