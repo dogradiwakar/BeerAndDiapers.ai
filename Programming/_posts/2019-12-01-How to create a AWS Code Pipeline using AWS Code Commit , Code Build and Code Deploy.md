@@ -93,6 +93,7 @@ Push using below git commands .
 ![](/BeerAndDiapers.ai/images/awscodepipeline/7.jpg)
 
 Configure Source
+
 ![](/BeerAndDiapers.ai/images/awscodepipeline/8.jpg)
 
 Configure environment
