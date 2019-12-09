@@ -8,6 +8,9 @@ canonical_url:
 categories: [Programming,Seaborn]
 #tags: [Programming1 , Numpy1]
 ---
+
+![png](/BeerAndDiapers.ai/images/Seaborn/output_7_4.png)
+
 ### Getting Started with Seaborn
 
 # Distribution Plots
