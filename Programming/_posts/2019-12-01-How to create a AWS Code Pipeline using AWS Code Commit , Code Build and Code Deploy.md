@@ -90,65 +90,65 @@ Push using below git commands .
 
 **Create Code Build**
 
-![](/BeerAndDiapers.ai/images/awscodepipeline/7.png)
+![](/BeerAndDiapers.ai/images/awscodepipeline/7.jpg)
 
 Configure Source
-![](/BeerAndDiapers.ai/images/awscodepipeline/8.png)
+![](/BeerAndDiapers.ai/images/awscodepipeline/8.jpg)
 
 Configure environment
-![](/BeerAndDiapers.ai/images/awscodepipeline/9.png)
+![](/BeerAndDiapers.ai/images/awscodepipeline/9.jpg)
 
-![](/BeerAndDiapers.ai/images/awscodepipeline/10.png)
+![](/BeerAndDiapers.ai/images/awscodepipeline/10.jpg)
 
 Configure Artifact
 
-![](/BeerAndDiapers.ai/images/awscodepipeline/11.png)
+![](/BeerAndDiapers.ai/images/awscodepipeline/11.jpg)
 
 Click on Create Build Project
 
 Click on Start Build
 
-![](/BeerAndDiapers.ai/images/awscodepipeline/11.png)
+![](/BeerAndDiapers.ai/images/awscodepipeline/12.jpg)
 
 Once all the Stages are finished, the Build File will be generated in the S3 Bucket
 
-![](/BeerAndDiapers.ai/images/awscodepipeline/12.png)
+![](/BeerAndDiapers.ai/images/awscodepipeline/13.jpg)
 
 Check S3 for the File
-![](/BeerAndDiapers.ai/images/awscodepipeline/13.png)
+![](/BeerAndDiapers.ai/images/awscodepipeline/14.jpg)
 
 **Create Beanstalk App**
 
-![](/BeerAndDiapers.ai/images/awscodepipeline/14.png)
+![](/BeerAndDiapers.ai/images/awscodepipeline/15.jpg)
 
 Click on Upload your code and give path of the S3 File
 
-![](/BeerAndDiapers.ai/images/awscodepipeline/15.png)
+![](/BeerAndDiapers.ai/images/awscodepipeline/16.png)
 
 Click on Create Application.
 
 **Create Pipeline**
 
-![](/BeerAndDiapers.ai/images/awscodepipeline/16.png)
+![](/BeerAndDiapers.ai/images/awscodepipeline/17.jpg)
 
 Configure Source
 
-![](/BeerAndDiapers.ai/images/awscodepipeline/17.png)
+![](/BeerAndDiapers.ai/images/awscodepipeline/18.jpg)
 
 Configure Build
 
-![](/BeerAndDiapers.ai/images/awscodepipeline/18.png)
+![](/BeerAndDiapers.ai/images/awscodepipeline/19.jpg)
 
 Configure Deploy
 
-![](/BeerAndDiapers.ai/images/awscodepipeline/19.png)
+![](/BeerAndDiapers.ai/images/awscodepipeline/20.jpg)
 
 Click on Create Pipeline
 
-![](/BeerAndDiapers.ai/images/awscodepipeline/20.png)
+![](/BeerAndDiapers.ai/images/awscodepipeline/21.png)
 
 Open the Sample App Page , Do some changes to the index.html and again commit the code to the code commit repo .
 
 The Pipeline will get initiated as soon as commit is done to the code .
 
-![](/BeerAndDiapers.ai/images/awscodepipeline/21.png)
+![](/BeerAndDiapers.ai/images/awscodepipeline/22.png)
