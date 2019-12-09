@@ -8,6 +8,7 @@ canonical_url:
 categories: [Installations]
 tags: [Installations]
 ---
+![](/BeerAndDiapers.ai/images/apachesparkonmacos/11.png)
 
 **Pre-requisites**
 
