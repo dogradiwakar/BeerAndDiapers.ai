@@ -7,10 +7,7 @@ image:
 noindex: true
 categories: [MachineLearning]
 ---
-
 ### Logistic Regression on Determining User Clicks on Ads.
-
-
 
 # Logistic Regression Project
 The data set contains the following features:

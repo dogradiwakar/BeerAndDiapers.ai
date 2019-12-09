@@ -7,7 +7,9 @@ image:
 noindex: true
 categories: [MachineLearning]
 ---
-### Linear Regression with Python
+### Predicing House Prices Linear Regression Python
+
+
 
 * 'Avg. Area Income': Avg. Income of residents of the city house is located in.
 * 'Avg. Area House Age': Avg Age of Houses in same city

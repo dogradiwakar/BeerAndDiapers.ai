@@ -7,7 +7,6 @@ image:
 noindex: true
 categories: [MachineLearning]
 ---
-
 ### Linear Regression Model on Ecommerce data
 
 
