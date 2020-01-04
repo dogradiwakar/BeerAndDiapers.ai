@@ -8,7 +8,7 @@ canonical_url:
 categories: [Installations]
 tags: [Installations]
 ---
-![](/beeranddiaper.com/images/installingHadoppOnMacos/21.png)
+![](/images/installingHadoppOnMacos/21.png)
 
 **Pre-requisites**
 
@@ -18,11 +18,11 @@ Go to Brew Website
 
 [https://brew.sh/](https://brew.sh/)
 
-![](/beeranddiaper.com/images/installingHadoppOnMacos/1.png)
+![](/images/installingHadoppOnMacos/1.png)
 
 Copy the url from Home page on mac os terminal to install Home brew
 
-![](/beeranddiaper.com/images/installingHadoppOnMacos/2.png)
+![](/images/installingHadoppOnMacos/2.png)
 
 
 **Java Installation**
@@ -31,25 +31,25 @@ Check Java Version
 ```
 Java -version
 ```
-![](/beeranddiaper.com/images/installingHadoppOnMacos/3.png)
+![](/images/installingHadoppOnMacos/3.png)
 
 
 Check below url for supported versions
 [https://cwiki.apache.org/confluence/display/HADOOP/Hadoop+Java+Versions](https://cwiki.apache.org/confluence/display/HADOOP/Hadoop+Java+Versions)
 
-![](/beeranddiaper.com/images/installingHadoppOnMacos/4.png)
+![](/images/installingHadoppOnMacos/4.png)
 Run below command to install Java8 as it is supported by Hadoop 3.0
 ```
 brew cask install java8
 ```
-![](/beeranddiaper.com/images/installingHadoppOnMacos/5.png)
+![](/images/installingHadoppOnMacos/5.png)
 For Latest Java use
 
 ```
 brew cask install java
 ```
 Check Java Version
-![](/beeranddiaper.com/images/installingHadoppOnMacos/6.png)
+![](/images/installingHadoppOnMacos/6.png)
 
 
 **Install Hadoop using brew**
@@ -60,9 +60,9 @@ Brew install hadoop
 ```
 
 
-![](/beeranddiaper.com/images/installingHadoppOnMacos/7.png)
+![](/images/installingHadoppOnMacos/7.png)
 
-![](/beeranddiaper.com/images/installingHadoppOnMacos/8.png)
+![](/images/installingHadoppOnMacos/8.png)
 
 **Configuration Changes**
 
@@ -81,9 +81,9 @@ Run below command to get the Java home
 
 
 
-![](/beeranddiaper.com/images/installingHadoppOnMacos/9.png)
+![](/images/installingHadoppOnMacos/9.png)
 
-![](/beeranddiaper.com/images/installingHadoppOnMacos/10.png)
+![](/images/installingHadoppOnMacos/10.png)
 
 
 **core-site.xml**
@@ -104,7 +104,7 @@ In core-site.xml, you will configure the HDFS address and port number.
 </configuration>
 ```
 
-![](/beeranddiaper.com/images/installingHadoppOnMacos/11.png)
+![](/images/installingHadoppOnMacos/11.png)
 
 
 
@@ -121,7 +121,7 @@ Add the following into mapred-site.xml .
 </configuration>
 ```
 
-![](/beeranddiaper.com/images/installingHadoppOnMacos/12.png)
+![](/images/installingHadoppOnMacos/12.png)
 
 
 **hdfs-site.xml**
@@ -135,7 +135,7 @@ In hdfs-site.xml ,add below
   </property>
 </configuration>
 ```
-![](/beeranddiaper.com/images/installingHadoppOnMacos/13.png)
+![](/images/installingHadoppOnMacos/13.png)
 
 
 **Configure SSH**
@@ -146,7 +146,7 @@ Check if ssh is enabled using below command
 
 In case of below error configure ssh
 
-![](/beeranddiaper.com/images/installingHadoppOnMacos/14.png)
+![](/images/installingHadoppOnMacos/14.png)
 
 Run below commands and Authorize SSH Keys i.e allow your system to accept login, we have to make it aware of the keys that will be used
 ```
@@ -158,7 +158,7 @@ Enable Remote Login: “System Preferences” -> “Sharing”. Check “Remote 
 
 Check ssh again using ssh localhost
 
-![](/beeranddiaper.com/images/installingHadoppOnMacos/15.png)
+![](/images/installingHadoppOnMacos/15.png)
 
 
 **Format HDFS**
@@ -169,9 +169,9 @@ Finally, the last step before starting to launch the different services would be
 
     hdfs namenode -format
 
-![](/beeranddiaper.com/images/installingHadoppOnMacos/16.png)
+![](/images/installingHadoppOnMacos/16.png)
 
-![](/beeranddiaper.com/images/installingHadoppOnMacos/17.png)
+![](/images/installingHadoppOnMacos/17.png)
 
 Alias to start and stop Hadoop Daemons
 
@@ -207,13 +207,13 @@ $ ./stop-all.sh
 ```
 
 Start Hadoop using the hstart alias
-![](/beeranddiaper.com/images/installingHadoppOnMacos/18.png)
+![](/images/installingHadoppOnMacos/18.png)
 
 
 
 Run JPS to check the services
 
-![](/beeranddiaper.com/images/installingHadoppOnMacos/19.png)
+![](/images/installingHadoppOnMacos/19.png)
 
 Access Hadoop web interface by connecting to
 
@@ -225,6 +225,6 @@ Node Specific Info:  [http://localhost:8042/](http://localhost:8042/)
 
 Name Node
 
-![](/beeranddiaper.com/images/installingHadoppOnMacos/20.png)
+![](/images/installingHadoppOnMacos/20.png)
 
-![](/beeranddiaper.com/images/installingHadoppOnMacos/21.png)
+![](/images/installingHadoppOnMacos/21.png)

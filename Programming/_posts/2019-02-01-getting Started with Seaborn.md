@@ -9,7 +9,7 @@ categories: [Programming,Seaborn]
 #tags: [Programming1 , Numpy1]
 ---
 
-![png](/beeranddiaper.com/images/Seaborn/output_7_4.png)
+![png](/images/Seaborn/output_7_4.png)
 
 ### Getting Started with Seaborn
 
@@ -137,7 +137,7 @@ sns.distplot(tips['total_bill'])
 
 
 
-![png](/beeranddiaper.com/images/Seaborn/output_4_1.png)
+![png](/images/Seaborn/output_4_1.png)
 
 
 
@@ -154,7 +154,7 @@ sns.distplot(tips['total_bill'],kde=False,bins=20)
 
 
 
-![png](/beeranddiaper.com/images/Seaborn/output_5_1.png)
+![png](/images/Seaborn/output_5_1.png)
 
 
 # Jointplot
@@ -177,19 +177,19 @@ sns.jointplot(x='total_bill',y='tip',data=tips, kind='reg')
 
 
 
-![png](/beeranddiaper.com/images/Seaborn/output_7_1.png)
+![png](/images/Seaborn/output_7_1.png)
 
 
 
-![png](/beeranddiaper.com/images/Seaborn/output_7_2.png)
+![png](/images/Seaborn/output_7_2.png)
 
 
 
-![png](/beeranddiaper.com/images/Seaborn/output_7_3.png)
+![png](/images/Seaborn/output_7_3.png)
 
 
 
-![png](/beeranddiaper.com/images/Seaborn/output_7_4.png)
+![png](/images/Seaborn/output_7_4.png)
 
 
 # pairplot
@@ -208,7 +208,7 @@ sns.pairplot(tips)
 
 
 
-![png](/beeranddiaper.com/images/Seaborn/output_9_1.png)
+![png](/images/Seaborn/output_9_1.png)
 
 
 
@@ -224,7 +224,7 @@ sns.pairplot(tips, hue='sex',palette='coolwarm')
 
 
 
-![png](/beeranddiaper.com/images/Seaborn/output_10_1.png)
+![png](/images/Seaborn/output_10_1.png)
 
 
 # rugplot
@@ -243,7 +243,7 @@ sns.rugplot(tips['total_bill'])
 
 
 
-![png](/beeranddiaper.com/images/Seaborn/output_12_1.png)
+![png](/images/Seaborn/output_12_1.png)
 
 
 # kdeplot
@@ -300,7 +300,7 @@ plt.ylim(0,1)
 
 
 
-![png](/beeranddiaper.com/images/Seaborn/output_14_1.png)
+![png](/images/Seaborn/output_14_1.png)
 
 
 
@@ -331,7 +331,7 @@ plt.suptitle("Sum of the Basis Functions")
 
 
 
-![png](/beeranddiaper.com/images/Seaborn/output_15_1.png)
+![png](/images/Seaborn/output_15_1.png)
 
 
 
@@ -348,7 +348,7 @@ sns.rugplot(tips['total_bill'])
 
 
 
-![png](/beeranddiaper.com/images/Seaborn/output_16_1.png)
+![png](/images/Seaborn/output_16_1.png)
 
 
 # Categorical Data Plots
@@ -379,7 +379,7 @@ sns.barplot(x='sex',y='total_bill',data=tips)
 
 
 
-![png](/beeranddiaper.com/images/Seaborn/output_19_1.png)
+![png](/images/Seaborn/output_19_1.png)
 
 
 
@@ -397,7 +397,7 @@ sns.barplot(x='sex',y='total_bill',data=tips,estimator=np.sum)
 
 
 
-![png](/beeranddiaper.com/images/Seaborn/output_20_1.png)
+![png](/images/Seaborn/output_20_1.png)
 
 
 
@@ -413,7 +413,7 @@ sns.countplot(x='sex',data=tips)
 
 
 
-![png](/beeranddiaper.com/images/Seaborn/output_21_1.png)
+![png](/images/Seaborn/output_21_1.png)
 
 
 # boxplot and violinplot
@@ -438,7 +438,7 @@ sns.boxplot(x='day',y='total_bill',data=tips, palette='rainbow')
 
 
 
-![png](/beeranddiaper.com/images/Seaborn/output_23_1.png)
+![png](/images/Seaborn/output_23_1.png)
 
 
 
@@ -455,7 +455,7 @@ sns.boxplot(data=tips, palette='rainbow',orient='h')
 
 
 
-![png](/beeranddiaper.com/images/Seaborn/output_24_1.png)
+![png](/images/Seaborn/output_24_1.png)
 
 
 
@@ -472,7 +472,7 @@ sns.boxplot(x='day',y='total_bill',data=tips, palette='rainbow',hue='sex')
 
 
 
-![png](/beeranddiaper.com/images/Seaborn/output_25_1.png)
+![png](/images/Seaborn/output_25_1.png)
 
 
 
@@ -488,7 +488,7 @@ sns.violinplot(x='day',y='total_bill',data=tips, palette='rainbow')
 
 
 
-![png](/beeranddiaper.com/images/Seaborn/output_26_1.png)
+![png](/images/Seaborn/output_26_1.png)
 
 
 
@@ -504,7 +504,7 @@ sns.violinplot(x='day',y='total_bill',data=tips, palette='rainbow',hue='sex')
 
 
 
-![png](/beeranddiaper.com/images/Seaborn/output_27_1.png)
+![png](/images/Seaborn/output_27_1.png)
 
 
 
@@ -521,7 +521,7 @@ sns.violinplot(x="day", y="total_bill", data=tips,hue='sex',split=True,platette=
 
 
 
-![png](/beeranddiaper.com/images/Seaborn/output_28_1.png)
+![png](/images/Seaborn/output_28_1.png)
 
 
 # stripplot and swarmplot
@@ -543,7 +543,7 @@ sns.stripplot(x="day", y="total_bill", data=tips)
 
 
 
-![png](/beeranddiaper.com/images/Seaborn/output_30_1.png)
+![png](/images/Seaborn/output_30_1.png)
 
 
 
@@ -559,7 +559,7 @@ sns.stripplot(x="day", y="total_bill", data=tips,jitter=True)
 
 
 
-![png](/beeranddiaper.com/images/Seaborn/output_31_1.png)
+![png](/images/Seaborn/output_31_1.png)
 
 
 
@@ -575,7 +575,7 @@ sns.stripplot(x="day", y="total_bill", data=tips,jitter=True,hue='sex',palette='
 
 
 
-![png](/beeranddiaper.com/images/Seaborn/output_32_1.png)
+![png](/images/Seaborn/output_32_1.png)
 
 
 
@@ -591,7 +591,7 @@ sns.stripplot(x="day", y="total_bill", data=tips,jitter=True,hue='sex',palette='
 
 
 
-![png](/beeranddiaper.com/images/Seaborn/output_33_1.png)
+![png](/images/Seaborn/output_33_1.png)
 
 
 
@@ -607,7 +607,7 @@ sns.swarmplot(x="day", y="total_bill", data=tips)
 
 
 
-![png](/beeranddiaper.com/images/Seaborn/output_34_1.png)
+![png](/images/Seaborn/output_34_1.png)
 
 
 
@@ -623,7 +623,7 @@ sns.swarmplot(x="day", y="total_bill",hue='sex',data=tips, palette="Set1", split
 
 
 
-![png](/beeranddiaper.com/images/Seaborn/output_35_1.png)
+![png](/images/Seaborn/output_35_1.png)
 
 
 
@@ -641,7 +641,7 @@ sns.swarmplot(x="tip", y="day", data=tips,color='black',size=3)
 
 
 
-![png](/beeranddiaper.com/images/Seaborn/output_36_1.png)
+![png](/images/Seaborn/output_36_1.png)
 
 
 # factorplot
@@ -662,15 +662,15 @@ sns.factorplot(x='sex',y='total_bill',data=tips,kind='violin')
 
 
 
-![png](/beeranddiaper.com/images/Seaborn/output_38_1.png)
+![png](/images/Seaborn/output_38_1.png)
 
 
 
-![png](/beeranddiaper.com/images/Seaborn/output_38_2.png)
+![png](/images/Seaborn/output_38_2.png)
 
 
 
-![png](/beeranddiaper.com/images/Seaborn/output_38_3.png)
+![png](/images/Seaborn/output_38_3.png)
 
 
 # Matrix Plots¶
@@ -767,7 +767,7 @@ sns.heatmap(tp)
 
 
 
-![png](/beeranddiaper.com/images/Seaborn/output_43_1.png)
+![png](/images/Seaborn/output_43_1.png)
 
 
 
@@ -784,7 +784,7 @@ sns.heatmap(tips.corr(),cmap='coolwarm',annot=True)
 
 
 
-![png](/beeranddiaper.com/images/Seaborn/output_44_1.png)
+![png](/images/Seaborn/output_44_1.png)
 
 
 
@@ -1043,7 +1043,7 @@ sns.heatmap(pvflights)
 
 
 
-![png](/beeranddiaper.com/images/Seaborn/output_46_1.png)
+![png](/images/Seaborn/output_46_1.png)
 
 
 
@@ -1060,7 +1060,7 @@ sns.heatmap(pvflights,cmap='magma',linecolor='white',linewidths=1)
 
 
 
-![png](/beeranddiaper.com/images/Seaborn/output_47_1.png)
+![png](/images/Seaborn/output_47_1.png)
 
 
 # clustermap
@@ -1079,7 +1079,7 @@ sns.clustermap(pvflights)
 
 
 
-![png](/beeranddiaper.com/images/Seaborn/output_49_1.png)
+![png](/images/Seaborn/output_49_1.png)
 
 
 
@@ -1095,7 +1095,7 @@ sns.clustermap(pvflights,cmap='coolwarm',standard_scale=1)
 
 
 
-![png](/beeranddiaper.com/images/Seaborn/output_50_1.png)
+![png](/images/Seaborn/output_50_1.png)
 
 
 
@@ -1115,7 +1115,7 @@ sns.lmplot(x='total_bill',y='tip',data=tips)
 
 
 
-![png](/beeranddiaper.com/images/Seaborn/output_52_1.png)
+![png](/images/Seaborn/output_52_1.png)
 
 
 
@@ -1132,7 +1132,7 @@ sns.lmplot(x='total_bill',y='tip',data=tips,hue='sex')
 
 
 
-![png](/beeranddiaper.com/images/Seaborn/output_53_1.png)
+![png](/images/Seaborn/output_53_1.png)
 
 
 
@@ -1148,7 +1148,7 @@ sns.lmplot(x='total_bill',y='tip',data=tips,hue='sex',palette='coolwarm')
 
 
 
-![png](/beeranddiaper.com/images/Seaborn/output_54_1.png)
+![png](/images/Seaborn/output_54_1.png)
 
 
 
@@ -1165,7 +1165,7 @@ sns.lmplot(x='total_bill',y='tip',data=tips,hue='sex',palette='coolwarm',markers
 
 
 
-![png](/beeranddiaper.com/images/Seaborn/output_55_1.png)
+![png](/images/Seaborn/output_55_1.png)
 
 
 
@@ -1182,7 +1182,7 @@ sns.lmplot(x='total_bill',y='tip',data=tips,col='sex')
 
 
 
-![png](/beeranddiaper.com/images/Seaborn/output_56_1.png)
+![png](/images/Seaborn/output_56_1.png)
 
 
 
@@ -1199,7 +1199,7 @@ sns.lmplot(x="total_bill", y="tip", row="sex", col="time",data=tips)
 
 
 
-![png](/beeranddiaper.com/images/Seaborn/output_57_1.png)
+![png](/images/Seaborn/output_57_1.png)
 
 
 
@@ -1216,7 +1216,7 @@ sns.lmplot(x='total_bill',y='tip',data=tips,col='day',hue='sex',palette='coolwar
 
 
 
-![png](/beeranddiaper.com/images/Seaborn/output_58_1.png)
+![png](/images/Seaborn/output_58_1.png)
 
 
 
@@ -1234,7 +1234,7 @@ sns.lmplot(x='total_bill',y='tip',data=tips,col='day',hue='sex',palette='coolwar
 
 
 
-![png](/beeranddiaper.com/images/Seaborn/output_59_1.png)
+![png](/images/Seaborn/output_59_1.png)
 
 
 # Grids¶
@@ -1339,7 +1339,7 @@ sns.PairGrid(iris)
 
 
 
-![png](/beeranddiaper.com/images/Seaborn/output_63_1.png)
+![png](/images/Seaborn/output_63_1.png)
 
 
 
@@ -1357,7 +1357,7 @@ g.map(plt.scatter)
 
 
 
-![png](/beeranddiaper.com/images/Seaborn/output_64_1.png)
+![png](/images/Seaborn/output_64_1.png)
 
 
 
@@ -1377,7 +1377,7 @@ g.map_lower(sns.kdeplot)
 
 
 
-![png](/beeranddiaper.com/images/Seaborn/output_65_1.png)
+![png](/images/Seaborn/output_65_1.png)
 
 
 # pairplot
@@ -1396,7 +1396,7 @@ sns.pairplot(iris)
 
 
 
-![png](/beeranddiaper.com/images/Seaborn/output_67_1.png)
+![png](/images/Seaborn/output_67_1.png)
 
 
 
@@ -1412,7 +1412,7 @@ sns.pairplot(iris,hue='species',palette='rainbow')
 
 
 
-![png](/beeranddiaper.com/images/Seaborn/output_68_1.png)
+![png](/images/Seaborn/output_68_1.png)
 
 
 # Facet Grid¶
@@ -1425,7 +1425,7 @@ g = sns.FacetGrid(tips, col="time", row="smoker")
 ```
 
 
-![png](/beeranddiaper.com/images/Seaborn/output_70_0.png)
+![png](/images/Seaborn/output_70_0.png)
 
 
 
@@ -1435,7 +1435,7 @@ g = g.map(plt.hist, "total_bill")
 ```
 
 
-![png](/beeranddiaper.com/images/Seaborn/output_71_0.png)
+![png](/images/Seaborn/output_71_0.png)
 
 
 
@@ -1446,7 +1446,7 @@ g = g.map(plt.scatter, "total_bill", "tip").add_legend()
 ```
 
 
-![png](/beeranddiaper.com/images/Seaborn/output_72_0.png)
+![png](/images/Seaborn/output_72_0.png)
 
 
 # JointGrid
@@ -1459,7 +1459,7 @@ g = sns.JointGrid(x="total_bill", y="tip", data=tips)
 ```
 
 
-![png](/beeranddiaper.com/images/Seaborn/output_74_0.png)
+![png](/images/Seaborn/output_74_0.png)
 
 
 
@@ -1469,7 +1469,7 @@ g = g.plot(sns.regplot, sns.distplot)
 ```
 
 
-![png](/beeranddiaper.com/images/Seaborn/output_75_0.png)
+![png](/images/Seaborn/output_75_0.png)
 
 
 
@@ -1483,4 +1483,4 @@ sns.despine(left=True)
 ```
 
 
-![png](/beeranddiaper.com/images/Seaborn/output_76_0.png)
+![png](/images/Seaborn/output_76_0.png)

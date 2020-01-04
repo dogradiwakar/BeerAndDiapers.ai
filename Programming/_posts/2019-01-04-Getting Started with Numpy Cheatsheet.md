@@ -11,7 +11,7 @@ categories: [Programming,Numpy]
 ### Getting Started with Numpy Cheat sheet
 
 
-![](/beeranddiaper.com/images/2018/numpy/datacamp.PNG)
+![](/images/2018/numpy/datacamp.PNG)
 
 Image courtesy Datacamp
 

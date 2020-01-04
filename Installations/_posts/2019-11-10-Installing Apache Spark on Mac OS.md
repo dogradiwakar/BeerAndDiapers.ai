@@ -8,7 +8,7 @@ canonical_url:
 categories: [Installations]
 tags: [Installations]
 ---
-![](/beeranddiaper.com/images/apachesparkonmacos/11.png)
+![](/images/apachesparkonmacos/11.png)
 
 **Pre-requisites**
 
@@ -17,11 +17,11 @@ tags: [Installations]
 Go to Brew Website
 [https://brew.sh/](https://brew.sh/)
 
-![](/beeranddiaper.com/images/apachesparkonmacos/1.png)
+![](/images/apachesparkonmacos/1.png)
 
 Copy the url from Home page on mac os terminal to install Home brew
 
-![](/beeranddiaper.com/images/apachesparkonmacos/2.png)
+![](/images/apachesparkonmacos/2.png)
 
 Run below command to update homebrew
 
@@ -33,13 +33,13 @@ Check Java Version
 
     Java -version
 
-![](/beeranddiaper.com/images/apachesparkonmacos/3.png)
+![](/images/apachesparkonmacos/3.png)
 
 Run below command to install Java8
 
     brew cask install java8
 
-![](/beeranddiaper.com/images/apachesparkonmacos/4.png)
+![](/images/apachesparkonmacos/4.png)
 
 For Latest Java use
 
@@ -47,7 +47,7 @@ For Latest Java use
 
 Check Java Version
 
-![](/beeranddiaper.com/images/apachesparkonmacos/5.png)
+![](/images/apachesparkonmacos/5.png)
 
 
  **Install xcode-select**
@@ -58,34 +58,34 @@ Check Java Version
 
     brew install scala
 
-![](/beeranddiaper.com/images/apachesparkonmacos/6.png)
+![](/images/apachesparkonmacos/6.png)
 
 Use `scala -version` to get the scala version
 
-![](/beeranddiaper.com/images/apachesparkonmacos/7.png)
+![](/images/apachesparkonmacos/7.png)
 
 
 **Install Apache Spark**
 
     brew install apache-spark
 
-![](/beeranddiaper.com/images/apachesparkonmacos/8.png)
+![](/images/apachesparkonmacos/8.png)
 
 To start spark shell execute below command
 
     Spark-shell
 
-![](/beeranddiaper.com/images/apachesparkonmacos/9.png)
+![](/images/apachesparkonmacos/9.png)
 
 Run below command to check the execution which will return the string "Hello World"
 
     val s = "hello world"
 
-![](/beeranddiaper.com/images/apachesparkonmacos/10.png)
+![](/images/apachesparkonmacos/10.png)
 
 Run `pyspark` to start pyspark shell
 
-![](/beeranddiaper.com/images/apachesparkonmacos/11.png)
+![](/images/apachesparkonmacos/11.png)
 
 **Add Spark path to bash profile**
 
@@ -98,7 +98,7 @@ Run below command and then add the path to the profile
     export PYTHONPATH=/usr/local/Cellar/apache-spark/2.4.4/libexec/python/:$PYTHONP$
     source ~/.bash_profile
 
-![](/beeranddiaper.com/images/apachesparkonmacos/12.png)
+![](/images/apachesparkonmacos/12.png)
 
     cd /usr/local/Cellar/apache-spark/2.4.4/libexec/sbin
 
@@ -106,12 +106,12 @@ And execute below command to start all services
 
     sbin/start-all.sh
 
-![](/beeranddiaper.com/images/apachesparkonmacos/13.png)
+![](/images/apachesparkonmacos/13.png)
 
 Spark Master UI : [http://localhost:8080/](http://localhost:8080/)
 
-![](/beeranddiaper.com/images/apachesparkonmacos/14.png)
+![](/images/apachesparkonmacos/14.png)
 
 Spark Application UI : [http://localhost:4040/](http://localhost:4040/)
 
-![](/beeranddiaper.com/images/apachesparkonmacos/15.png)
+![](/images/apachesparkonmacos/15.png)
