@@ -30,8 +30,8 @@ Supports external tools integration for source, build and deploy.
 
 Below is a high level flow in a code pipeline & description of the key pieces involved .
 /*![](/BeerAndDiapers.ai/images/awscodepipeline/0.png)*/
-![](/BeerAndDiapers.ai/images/awscodepipeline/0.png)
-
+![](/images/awscodepipeline/0.png)
+![](/beeranddiaper.com/images/awscodepipeline/0.png)
 **Code Commit** : a fully-managed source control service that hosts secure Git-based repositories.
 
 **Code Build**: a fully managed continuous integration service that compiles source code, runs tests, and produces software packages that are ready to deploy.
