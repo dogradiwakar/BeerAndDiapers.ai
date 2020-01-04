@@ -8,7 +8,7 @@ canonical_url:
 categories: [Programming,DevOps]
 #tags: [Programming1 , Numpy1]
 ---
-![](/beeranddiaper.com/images/awscodepipeline/0.png)
+![](/images/awscodepipeline/0.png)
 ### How to create a AWS Code Pipeline using AWS Code Commit , Code Build and Code Deploy
 
 **CodePipeline - Introduction**
@@ -30,7 +30,7 @@ Supports external tools integration for source, build and deploy.
 
 Below is a high level flow in a code pipeline & description of the key pieces involved .
 
-![](/beeranddiaper.com/images/awscodepipeline/0.png)
+![](/images/awscodepipeline/0.png)
 **Code Commit** : a fully-managed source control service that hosts secure Git-based repositories.
 
 **Code Build**: a fully managed continuous integration service that compiles source code, runs tests, and produces software packages that are ready to deploy.
@@ -61,98 +61,98 @@ Select the dist folder & Select the file named aws-codepipeline-s3-aws-codedeplo
 
 Select View Raw & save the sample file
 
-![](/beeranddiaper.com/images/awscodepipeline/1.png)
+![](/images/awscodepipeline/1.png)
 
 For repo access User should have Code commit Full access role assigned to his login .
 
 Clone the Repo
 
-![](/beeranddiaper.com/images/awscodepipeline/2.png)
+![](/images/awscodepipeline/2.png)
 
 Connect to your repository , copy sample files
 
 Create the buildspec.yml file and add below content to it . This will be used for initiating the build .
 
-![](/beeranddiaper.com/images/awscodepipeline/3.png)
+![](/images/awscodepipeline/3.png)
 
 Push using below git commands .
 
     git add *
 
-![](/beeranddiaper.com/images/awscodepipeline/4.png)
+![](/images/awscodepipeline/4.png)
 
     git commit –m “v1”
 
-![](/beeranddiaper.com/images/awscodepipeline/5.png)
+![](/images/awscodepipeline/5.png)
 
     git push
 
-![](/beeranddiaper.com/images/awscodepipeline/6.png)
+![](/images/awscodepipeline/6.png)
 
 **Create Code Build**
 
-![](/beeranddiaper.com/images/awscodepipeline/7.jpg)
+![](/images/awscodepipeline/7.jpg)
 
 Configure Source
 
-![](/beeranddiaper.com/images/awscodepipeline/8.jpg)
+![](/images/awscodepipeline/8.jpg)
 
 Configure environment
 
-![](/beeranddiaper.com/images/awscodepipeline/9.jpg)
+![](/images/awscodepipeline/9.jpg)
 
 
-![](/beeranddiaper.com/images/awscodepipeline/10.jpg)
+![](/images/awscodepipeline/10.jpg)
 
 Configure Artifact
 
-![](/beeranddiaper.com/images/awscodepipeline/11.jpg)
+![](/images/awscodepipeline/11.jpg)
 
 Click on Create Build Project
 
 Click on Start Build
 
-![](/beeranddiaper.com/images/awscodepipeline/12.jpg)
+![](/images/awscodepipeline/12.jpg)
 
 Once all the Stages are finished, the Build File will be generated in the S3 Bucket
 
-![](/beeranddiaper.com/images/awscodepipeline/13.jpg)
+![](/images/awscodepipeline/13.jpg)
 
 Check S3 for the File
-![](/beeranddiaper.com/images/awscodepipeline/14.jpg)
+![](/images/awscodepipeline/14.jpg)
 
 **Create Beanstalk App**
 
-![](/beeranddiaper.com/images/awscodepipeline/15.jpg)
+![](/images/awscodepipeline/15.jpg)
 
 Click on Upload your code and give path of the S3 File
 
-![](/beeranddiaper.com/images/awscodepipeline/16.png)
+![](/images/awscodepipeline/16.png)
 
 Click on Create Application.
 
 **Create Pipeline**
 
-![](/beeranddiaper.com/images/awscodepipeline/17.jpg)
+![](/images/awscodepipeline/17.jpg)
 
 Configure Source
 
-![](/beeranddiaper.com/images/awscodepipeline/18.jpg)
+![](/images/awscodepipeline/18.jpg)
 
 Configure Build
 
-![](/beeranddiaper.com/images/awscodepipeline/19.jpg)
+![](/images/awscodepipeline/19.jpg)
 
 Configure Deploy
 
-![](/beeranddiaper.com/images/awscodepipeline/20.jpg)
+![](/images/awscodepipeline/20.jpg)
 
 Click on Create Pipeline
 
-![](/beeranddiaper.com/images/awscodepipeline/21.png)
+![](/images/awscodepipeline/21.png)
 
 Open the Sample App Page , Do some changes to the index.html and again commit the code to the code commit repo .
 
 The Pipeline will get initiated as soon as commit is done to the code .
 
-![](/beeranddiaper.com/images/awscodepipeline/22.png)
+![](/images/awscodepipeline/22.png)
