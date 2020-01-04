@@ -52,13 +52,13 @@ author:
 # Add links to the sidebar.
 menu:
   - title:             Deep Learning
-    url:               /DeepLearning/
+    url:               /deepLearning/
   - title:             Installations
     url:               /installations/
   - title:             Programming
     url:               /programming/
   - title:             Machine Learning
-    url:               /machinelearning/
+    url:               /machineLearning/
   - title:             Life
     url:               /life/
 
