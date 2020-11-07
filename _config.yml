@@ -24,9 +24,9 @@ title:                 Beer&Diapers
 
 # A short description (~150 chars) of the page used for the meta description tag.
 # Can use markdown, but no more than one paragraph (enforced by `>`)
-description:           >
-  Hydejack is a boutique Jekyll theme for hackers, nerds, and academics,
-  with a focus on personal sites that are meant to impress.
+#description:           >
+#  Hydejack is a boutique Jekyll theme for hackers, nerds, and academics,
+#  with a focus on personal sites that are meant to impress.
 
 # A shorter description for the sidebar.
 #tagline:               Change `tagline` in `_config.yml`
@@ -57,6 +57,14 @@ menu:
     url:               /about/
   - title:             Installationa
     url:               /installations/
+    - title:             Deep Learning
+    url:               /deeplearning/
+  - title:             Programming
+    url:               /programming/
+  - title:             Machine Learning
+    url:               /machinelearning/
+  - title:             Life
+    url:               /life/
 
 # Add links to the footer.
 # Typically you'll want to link to your cookie- or privacy policy (if appliable), etc..
