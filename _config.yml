@@ -57,7 +57,7 @@ menu:
     url:               /about/
   - title:             Installationa
     url:               /installations/
-    - title:             Deep Learning
+  - title:             Deep Learning
     url:               /deeplearning/
   - title:             Programming
     url:               /programming/
