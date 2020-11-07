@@ -20,16 +20,16 @@
 lang:                  en
 
 # The title of your blog. Used in the sidebar and the browser tab.
-title:                 Beer&Diapers
+title:                 Starter Kit
 
 # A short description (~150 chars) of the page used for the meta description tag.
 # Can use markdown, but no more than one paragraph (enforced by `>`)
-#description:           >
-#  Hydejack is a boutique Jekyll theme for hackers, nerds, and academics,
-#  with a focus on personal sites that are meant to impress.
+description:           >
+  Hydejack is a boutique Jekyll theme for hackers, nerds, and academics,
+  with a focus on personal sites that are meant to impress.
 
 # A shorter description for the sidebar.
-#tagline:               Change `tagline` in `_config.yml`
+tagline:               Change `tagline` in `_config.yml`
 
 # A list of keywords for your blog
 keywords:              []
@@ -37,28 +37,18 @@ keywords:              []
 # A (square) logo for your site.
 # If provided, it will be shown at the top of the sidebar.
 # It also used by the `jekyll-seo-tag` plugin.
-#logo:                  /assets/img/logo.png
+logo:                  /assets/img/logo.png
 
 # This should be the same author as first entry in `_data/authors.yml`.
 author:
   # Used by `jekyll-feed`:
-  name:                <firstname> <lastname>.
+  name:                <firstname> <lastname>
   email:               <mail@domain.tld>
   # # Used by `jekyll-seo-tag`:
   # twitter:             <username>
 
 # Add links to the sidebar.
 menu:
-  - title:             Installationa
-    url:               /installations/
-  - title:             Deep Learning
-    url:               /deeplearning/
-  - title:             Programming
-    url:               /programming/
-  - title:             Machine Learning
-    url:               /machinelearning/
-  - title:             Life
-    url:               /life/
   - title:             Example
     url:               /example/
   - title:             Documentation
@@ -107,16 +97,15 @@ collections:
 # Theme
 # ---------------------------------------------------------------------------------------
 
-#theme: jekyll-theme-hydejack
+theme: jekyll-theme-hydejack
 # remote_theme: hydecorp/hydejack@v9.0.0-rc.6
-remote_theme: hydecorp/hydejack@v9.0.5
+
 
 # Customizaton
 # ----------------------------------------------------------------------------------------
-
+ 
 # Sidebar image and theme color of the site.
-#accent_image:          /assets/img/sidebar-bg.jpg
-accent_image:          /images/2.jpeg
+accent_image:          /assets/img/sidebar-bg.jpg
 accent_color:          rgb(79,177,186)
 
 # This is used for the `theme-color` meta tag,
@@ -198,7 +187,7 @@ kramdown:
 # Set your Google Analytics id to receive `pageview` events.
 # To remove Google Anaylics from your page, remove the line below.
 # google_analytics:      UA-XXXXXXXX-X
-google_analytics: UA-XXXXXXXX-X
+
 # Setting a disqus shortname will enable the comment section on
 # pages with `comments: true` in the front matter.
 # disqus:                <username>
@@ -242,7 +231,7 @@ hydejack:
   # This will increase site build speed dramatically!
   no_inline_css:       false
 
-  # Set to `true` if you don't intend on changing the accent color on a per-page basis.
+  # Set to `true` if you don't intend on changing the accent color on a per-page basis. 
   # This will increase site build speed!
   no_page_style:       false
 
@@ -282,7 +271,7 @@ hydejack:
 
   # Buyers of the PRO version can opt to hide all dates from the theme.
   # Frequent consumers of online content will know that nothing devalues a post like
-  # seeing an old date.
+  # seeing an old date. 
   hide_dates:          false
 
   # Note that dark mode only works in the PRO version of Hydejack.
@@ -402,21 +391,21 @@ jekyll_compose:
   default_front_matter:
     drafts:
       layout: post
-      description: >
+      description: > 
         A short ~160 character description of your post for search engines,
         social media previews, etc.
       image:
         path: /assets/img/sidebar-bg.jpg
     posts:
       layout: post
-      description: >
+      description: > 
         A short ~160 character description of your post for search engines,
         social media previews, etc.
       image:
         path: /assets/img/sidebar-bg.jpg
     projects:
       layout: project
-      description: >
+      description: > 
         A short ~160 character description of your post for search engines,
         social media previews, etc.
       image:
