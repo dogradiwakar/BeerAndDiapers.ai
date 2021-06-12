@@ -4,7 +4,7 @@
 # IMPORTANT: Set the URL of your site.
 # Set to https://<username>.github.io when hosting on GitHub Pages
 # (unless you are using a custom domain).
-# url:                   https://dogradiwakar.github.io
+# url:                   https://<username>.github.io
 
 # IMPORTANT: Set The "base URL" of your site.
 # When your site sits in a subdirectory, set to /<name of directory>
@@ -12,29 +12,29 @@
 # Use the empty string '' otherwise.
 # For GitHub project sites, this is usually the name of the project,
 # e.g. `/hydejack`.
-# baseurl:               '/BeerAndDiapers.ai'
+# baseurl:               ''
 
 # Language of your content in 2-letter code, e.g.: en, de.
 # You may also provide a location, e.g.: en-us, de_AT.
- lang:                  en
+lang:                  en
 
 # The title of your blog. Used in the sidebar and the browser tab.
- title:                 Beer&Diapers
+title:                 Beer&Diapers
 
 # A short description (~150 chars) of the page used for the meta description tag.
 # Can use markdown, but no more than one paragraph (enforced by `>`)
- description:           >
+description:           >
 #  "Best Jekyll Theme by a Mile".
 #  **Hydejack** is your presence on the web, featuring a blog, portfolio, and resume.
 #  Open `_config.yml` to edit this text.
 
 # A shorter description for the sidebar.
- tagline:               >
+tagline:               >
 #  "Best Jekyll Theme by a Mile".
 #  Open `_config.yml` to edit this text.
 
 # A list of keywords for your blog
- keywords:              []
+keywords:              []
 
 # A (square) logo for your site.
 # If provided, it will be shown at the top of the sidebar.
