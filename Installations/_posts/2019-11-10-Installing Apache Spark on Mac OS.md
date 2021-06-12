@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Installing Apache Spark on Mac OS
+title: Installing Apache Spark on Mac OS1
 description: >
 
 author: author1
