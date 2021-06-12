@@ -51,7 +51,7 @@ author:
 
 # Add links to the sidebar.
 menu:
-  - title:             Deep Learning
+  - title:             Deep Learning1
     url:               /deeplearning/
   - title:             Installations
     url:               /installations/
