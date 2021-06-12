@@ -16,10 +16,10 @@
 
 # Language of your content in 2-letter code, e.g.: en, de.
 # You may also provide a location, e.g.: en-us, de_AT.
-lang:                  en
+ lang:                  en
 
 # The title of your blog. Used in the sidebar and the browser tab.
-title:                 Beer&Diapers
+ title:                 Beer&Diapers
 
 # A short description (~150 chars) of the page used for the meta description tag.
 # Can use markdown, but no more than one paragraph (enforced by `>`)
@@ -29,12 +29,12 @@ title:                 Beer&Diapers
 #  Open `_config.yml` to edit this text.
 
 # A shorter description for the sidebar.
-tagline:               >
+ tagline:               >
 #  "Best Jekyll Theme by a Mile".
 #  Open `_config.yml` to edit this text.
 
 # A list of keywords for your blog
-keywords:              []
+ keywords:              []
 
 # A (square) logo for your site.
 # If provided, it will be shown at the top of the sidebar.
