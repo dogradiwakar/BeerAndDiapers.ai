@@ -9,7 +9,7 @@ categories: [Programming,Numpy]
 #tags: [Programming1 , Numpy1]
 ---
 
-![](/images/2018/installingspark/numpy.png)
+![](/BeerAndDiapers.ai/images/2018/installingspark/numpy.png)
 
 ### Getting Started with Numpy Part 1
 
