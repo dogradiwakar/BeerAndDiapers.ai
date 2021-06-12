@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Installing Apache Spark on Mac OS1
+title: Installing Apache Spark on Mac OS2
 description: >
 
 author: author1
@@ -17,7 +17,7 @@ tags: [Installations]
 Go to Brew Website
 [https://brew.sh/](https://brew.sh/)
 
-![](//BeerAndDiapers.ai/images/apachesparkonmacos/1.png)
+![](/BeerAndDiapers.ai/images/apachesparkonmacos/1.png)
 
 Copy the url from Home page on mac os terminal to install Home brew
 
