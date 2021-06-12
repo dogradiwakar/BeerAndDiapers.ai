@@ -17,7 +17,7 @@ tags: [Installations]
 Go to Brew Website
 [https://brew.sh/](https://brew.sh/)
 
-![](/images/apachesparkonmacos/1.png)
+![](//BeerAndDiapers.ai/images/apachesparkonmacos/1.png)
 
 Copy the url from Home page on mac os terminal to install Home brew
 
